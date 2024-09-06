@@ -168,23 +168,24 @@ div.section {
 .mb-56 {margin-bottom: 56px;}
 .mb-64 {margin-bottom: 64px;}
 
-.circle-icon {
-  background-color: #C14E63;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  padding: 8px;
-  border-radius: 64px;
-}
 .skill-container {
   display: flex;
   align-items: center;
   gap: 16px;
   border: 1px solid #C14E63;
   border-radius: 6px;
+}
+.skill-icon {
+  background-color: #C14E63;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+}
+.skill-text {
+  font-size: 19px;
+  flex: 1;
 }
 .col-3 {
   display: grid;
