@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = 'Blog - Thoughts on Web Design & Development';
-include('header.php');
+include('../header.php');
 ?>
 
 <body id="body" class="theme-light">
