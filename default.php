@@ -39,8 +39,7 @@
       transition: all 0.5s;
     }
     .theme-light {
-        /*background-color: #fff;*/
-      background-color: #d0d0d0;
+        background-color: #fff;
         color: #222;
     }
     .theme-dark {
