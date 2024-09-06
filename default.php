@@ -43,37 +43,37 @@ include('header.php');
         <div class="col-3">
 
           <div class="skill-container">
-            <div><i class="circle-icon fa-solid fa-desktop"></i></div>
+            <div class="circle-icon"><i class="fa-solid fa-desktop"></i></div>
             <div class="text-large">Website design & development</div>
           </div>
 
           <div class="skill-container">
-            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div class="circle-icon"><i class="fa-solid fa-code"></i></div>
             <div class="text-large">HTML, CSS, JavaScript</div>
           </div>
 
           <div class="skill-container">
-            <div><i class="circle-icon fa-brands fa-wordpress-simple"></i></div>
+            <div class="circle-icon"><i class="fa-brands fa-wordpress-simple"></i></div>
             <div class="text-large">WordPress &amp; PHP</div>
           </div>
 
           <div class="skill-container">
-            <div><i class="circle-icon fa-solid fa-arrow-pointer"></i></div>
+            <div class="circle-icon"><i class="fa-solid fa-arrow-pointer"></i></div>
             <div class="text-large">UI/UX design</div>
           </div>
 
           <div class="skill-container">
-            <div><i class="circle-icon fa-solid fa-palette"></i></div>
+            <div class="circle-icon"><i class="fa-solid fa-palette"></i></div>
             <div class="text-large">Adobe creative apps</div>
           </div>
 
           <div class="skill-container">
-            <div><i class="circle-icon fa-solid fa-swatchbook"></i></div>
+            <div class="circle-icon"><i class="fa-solid fa-swatchbook"></i></div>
             <div class="text-large">Branding &amp; style guides</div>
           </div>
 
           <div class="skill-container">
-            <div><i class="circle-icon fa-solid fa-object-group"></i></div>
+            <div class="circle-icon"><i class="fa-solid fa-object-group"></i></div>
             <div class="text-large">Application design systems</div>
           </div>
 
