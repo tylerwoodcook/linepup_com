@@ -183,11 +183,10 @@ div.section {
   align-items: center;
   width: 64px;
   height: 100%;
-  padding: 8px;
 }
 .skill-text {
   font-size: 19px;
-  padding: 8px;
+  padding: 16px;
   flex: 1;
 }
 .col-3 {
