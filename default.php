@@ -1,7 +1,9 @@
 <?php 
+$pageTitle = 'Linepup Design & Development';
 include('header.php');
 ?>
 
+<body id="body" class="theme-light">
   <div class="page-content">
     <div class="section header-section">
         <div class="header-title-container">

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Linepup</title>
+  <title><?php echo $pageTitle ?></title>
   <link rel="icon" type="image/x-icon" href="https://hpanel.hostinger.com/favicons/hostinger.png" />
   <meta charset="utf-8" />
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
@@ -202,5 +202,3 @@
     .mb-64 {margin-bottom: 64px;}
   </style>
 </head>
-
-<body id="body" class="theme-light">
