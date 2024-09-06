@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = 'How I use my social work education as a web developer';
-include('../linepup_com/header.php');
+include('../../header.php');
 ?>
 
 <body id="body" class="theme-light">
