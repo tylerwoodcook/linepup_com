@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dice Roller</title>
+    <style>
+    body {
+        padding: 0; margin: 0; font-family: sans-serif;
+    }
+    .container-fluid {
+	width: 100%;
+	max-width: 600px;
+	padding: 24px;
+}
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+	margin: 0;
+	width: 100%;
+	justify-content: space-between;
+}
+@media screen and (max-width: 400px) {
+	.container-fluid {
+		padding: 10px;
+	}
+	input, select {
+		padding: 6px;
+			margin-right: 1%;
+	margin-bottom: 1%;
+		width: 100px !important;
+	}
+	#button {
+		margin: 0;
+		width: 100px !important;
+	}
+}
+input, select {
+	margin-right: 1%;
+	margin-bottom: 1%;
+	padding: 10px;
+	border-radius: 6px;
+	border: 1px solid #c0c0c0;
+}
+#selectModifier, #modifier, #numberDice, #button {
+	width: 13%;
+	margin-bottom: 1%;
+}
+#typeDie {
+	width: 33%;
+	margin-bottom: 1%;
+}
+#button {
+	border-radius: 6px;
+	padding: 10px;
+}
+#result-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 8px;
+	text-align: center;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+</style>
+  </head>
+  <body>
+      
+          <div class="container-fluid">
+	<form>
+		<div class="form-row">
+			<input id="numberDice" type="number" value="1" onchange="getDieNumber()"></input>
+			<select id="typeDie" onchange="getDieType()">
+				<option value="4">d4</option>
+				<option value="6">d6</option>
+				<option value="8">d8</option>
+				<option value="10">d10</option>
+				<option value="12">d12</option>
+				<option value="20">d20</option>
+				<option value="100">d100</option>
+			</select>
+			<select id="selectModifier">
+				<option value="+">+</option>
+				<option value="-">-</option>
+			</select>
+			<input id="modifier" type="number" value="0"></input>
+			<button id="button" class="btn btn-lg btn-primary">Roll</button>
+		</div>
+	</form>
+<div id="result-container">
+	<h2 id="result"></h2>
+</div>
+</div>
+
+      
+<script>
+    //gets sides from dropdown in ui
+function getDieType() {
+	return parseInt(document.getElementById("typeDie").value);
+}
+
+//retrieves number of die to roll
+function getDieNumber() {
+	return document.getElementById("numberDice").value;
+}
+
+//retrieves roll modifier
+function getModifier() {
+	let num = document.getElementById("modifier").value;
+	if (document.getElementById("selectModifier").value == '-') {
+		return parseInt(-num);
+	} else {
+		return parseInt(num);
+	}
+}
+
+//determines number of sides
+function Dice(sides) {
+  this.sides = sides;
+}
+
+//generates roll based on number of sides
+Dice.prototype.roll = function () {
+  return Math.floor(Math.random() * this.sides) + 1;
+}
+
+//UI functionality
+let button = document.getElementById("button");
+
+button.onclick = function(e) {
+    	e.preventDefault();
+	var resultString = "";
+  var dieRoll = new Dice(getDieType());
+	var result = 0;
+	var logResult = document.querySelector("#result");
+	for (let i = 0; i < getDieNumber(); i++) {
+		 result += dieRoll.roll();
+	}
+	result += getModifier();
+  //console.log(result);
+	logResult.innerHTML = result;
+};
+
+</script>
+  </body>
+</html>
