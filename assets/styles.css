@@ -169,9 +169,24 @@ div.section {
   background-color: #C14E63;
   color: #fff;
   display: flex;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
   width: 24px;
   height: 24px;
   padding: 8px;
   border-radius: 64px;
+}
+.skill-container {
+  display: grid;
+  grid-template-columns: 48px 100%;
+}
+.col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+@media screen and (max-width: 600px) {
+  .col-3 {
+    grid-template-columns: 1fr;
+  }
 }

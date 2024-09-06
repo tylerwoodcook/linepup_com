@@ -39,6 +39,14 @@ include('header.php');
         <p>As CorpU grew to reach new audiences globally, we caught the attention of the world’s largest marketplace for online courses, Udemy. In August 2021, CorpU was acquired by Udemy Business, the branch of Udemy dedicated to offering enterprise solutions for businesses around the world.</p>
         <p>Today, I’m proud to be a UI Developer for such a renowned company with an honorable mission to share knowledge with the world.</p>
         <h2>Skills &amp; abilities</h2>
+
+        <div class="col-3">
+          <div class="skill-container">
+            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div>Website design & development</div>
+          </div>
+        </div>
+
         <ul>
             <li><i class="circle-icon fa-solid fa-code"></i> Website design & development</li>
             <li><i class="circle-icon fa-solid fa-code"></i> HTML, CSS, JavaScript, PHP</li>
@@ -48,6 +56,7 @@ include('header.php');
             <li><i class="circle-icon fa-solid fa-code"></i> Branding &amp; style guides</li>
             <li><i class="circle-icon fa-solid fa-code"></i> Application design systems</li>
         </ul>
+
         <h2>Personal life</h2>
         <p>When I’m not working, I like to stay busy playing with my two french bulldogs (Leia and Keira), recording music, woodworking or doing other creative things.</p>
       <hr />
