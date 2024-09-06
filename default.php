@@ -40,13 +40,13 @@ include('header.php');
         <p>Today, I’m proud to be a UI Developer for such a renowned company with an honorable mission to share knowledge with the world.</p>
         <h2>Skills &amp; abilities</h2>
         <ul>
-            <li><i class="fa-solid fa-code"></i>Website design & development</li>
-            <li>HTML, CSS, JavaScript, PHP</li>
-            <li>WordPress</li>
-            <li>UI/UX design</li>
-            <li>Adobe creative apps</li>
-            <li>Branding &amp; style guides</li>
-            <li>Application design systems</li>
+            <li><i class="circle-icon fa-solid fa-code"></i> Website design & development</li>
+            <li><i class="circle-icon fa-solid fa-code"></i> HTML, CSS, JavaScript, PHP</li>
+            <li><i class="circle-icon fa-solid fa-code"></i> WordPress</li>
+            <li><i class="circle-icon fa-solid fa-code"></i> UI/UX design</li>
+            <li><i class="circle-icon fa-solid fa-code"></i> Adobe creative apps</li>
+            <li><i class="circle-icon fa-solid fa-code"></i> Branding &amp; style guides</li>
+            <li><i class="circle-icon fa-solid fa-code"></i> Application design systems</li>
         </ul>
         <h2>Personal life</h2>
         <p>When I’m not working, I like to stay busy playing with my two french bulldogs (Leia and Keira), recording music, woodworking or doing other creative things.</p>
