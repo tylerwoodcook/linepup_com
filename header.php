@@ -3,7 +3,7 @@
 
 <head>
   <title><?php echo $pageTitle ?></title>
-  <link rel="icon" type="image/x-icon" href="https://hpanel.hostinger.com/favicons/hostinger.png" />
+  <link rel="icon" type="image/x-icon" href="lp-logo-sticker.png" />
   <meta charset="utf-8" />
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
   <meta content="Linepup's Homepage" name="This is the homepage for Linepup" />
