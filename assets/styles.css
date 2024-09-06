@@ -183,6 +183,8 @@ div.section {
   display: flex;
   align-items: center;
   gap: 16px;
+  border: 1px solid #C14E63;
+  border-radius: 6px;
 }
 .col-3 {
   display: grid;
