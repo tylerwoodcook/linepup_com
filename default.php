@@ -41,21 +41,41 @@ include('header.php');
         <h2>Skills &amp; abilities</h2>
 
         <div class="col-3">
+
           <div class="skill-container">
             <div><i class="circle-icon fa-solid fa-code"></i></div>
             <div>Website design & development</div>
           </div>
-        </div>
 
-        <ul>
-            <li><i class="circle-icon fa-solid fa-code"></i> Website design & development</li>
-            <li><i class="circle-icon fa-solid fa-code"></i> HTML, CSS, JavaScript, PHP</li>
-            <li><i class="circle-icon fa-solid fa-code"></i> WordPress</li>
-            <li><i class="circle-icon fa-solid fa-code"></i> UI/UX design</li>
-            <li><i class="circle-icon fa-solid fa-code"></i> Adobe creative apps</li>
-            <li><i class="circle-icon fa-solid fa-code"></i> Branding &amp; style guides</li>
-            <li><i class="circle-icon fa-solid fa-code"></i> Application design systems</li>
-        </ul>
+          <div class="skill-container">
+            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div>HTML, CSS, JavaScript, PHP</div>
+          </div>
+
+          <div class="skill-container">
+            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div>WordPress</div>
+          </div>
+        </div>
+          <div class="skill-container">
+            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div>UI/UX design</div>
+          </div>
+
+          <div class="skill-container">
+            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div>Adobe creative apps</div>
+          </div>
+
+          <div class="skill-container">
+            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div>Branding &amp; style guides</div>
+          </div>
+
+          <div class="skill-container">
+            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div>Application design systems</div>
+          </div>
 
         <h2>Personal life</h2>
         <p>When I’m not working, I like to stay busy playing with my two french bulldogs (Leia and Keira), recording music, woodworking or doing other creative things.</p>

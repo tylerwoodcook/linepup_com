@@ -179,6 +179,7 @@ div.section {
 .skill-container {
   display: grid;
   grid-template-columns: 48px 100%;
+  align-items: center;
 }
 .col-3 {
   display: grid;
