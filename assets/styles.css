@@ -66,6 +66,9 @@ ul {
 a {
   color: #C14E63;
 }
+.text-large {
+  font-size: 19px;
+}
 .dark-theme-links {
   color: #D1A659;
 }
@@ -180,9 +183,11 @@ div.section {
   display: grid;
   grid-template-columns: 48px 100%;
   align-items: center;
+  width: 100%;
 }
 .col-3 {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
