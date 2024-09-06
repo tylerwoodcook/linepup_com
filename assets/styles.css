@@ -171,10 +171,8 @@ div.section {
 .skill-container {
   display: flex;
   align-items: center;
-  gap: 16px;
   border: 1px solid #C14E63;
   border-radius: 6px;
-  padding: 8px;
 }
 .skill-icon {
   background-color: #C14E63;
@@ -184,9 +182,12 @@ div.section {
   justify-content: center;
   align-items: center;
   width: 64px;
+  height: 100%;
+  padding: 8px;
 }
 .skill-text {
   font-size: 19px;
+  padding: 8px;
   flex: 1;
 }
 .col-3 {
