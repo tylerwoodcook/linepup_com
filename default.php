@@ -44,38 +44,40 @@ include('header.php');
 
           <div class="skill-container">
             <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div>Website design & development</div>
+            <div class="h4">Website design & development</div>
           </div>
 
           <div class="skill-container">
             <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div>HTML, CSS, JavaScript, PHP</div>
+            <div class="h4">HTML, CSS, JavaScript, PHP</div>
           </div>
 
           <div class="skill-container">
             <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div>WordPress</div>
+            <div class="h4">WordPress</div>
           </div>
+
+          <div class="skill-container">
+            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div class="h4">UI/UX design</div>
+          </div>
+
+          <div class="skill-container">
+            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div class="h4">Adobe creative apps</div>
+          </div>
+
+          <div class="skill-container">
+            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div class="h4">Branding &amp; style guides</div>
+          </div>
+
+          <div class="skill-container">
+            <div><i class="circle-icon fa-solid fa-code"></i></div>
+            <div class="h4">Application design systems</div>
+          </div>
+
         </div>
-          <div class="skill-container">
-            <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div>UI/UX design</div>
-          </div>
-
-          <div class="skill-container">
-            <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div>Adobe creative apps</div>
-          </div>
-
-          <div class="skill-container">
-            <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div>Branding &amp; style guides</div>
-          </div>
-
-          <div class="skill-container">
-            <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div>Application design systems</div>
-          </div>
 
         <h2>Personal life</h2>
         <p>When I’m not working, I like to stay busy playing with my two french bulldogs (Leia and Keira), recording music, woodworking or doing other creative things.</p>
