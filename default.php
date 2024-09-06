@@ -44,37 +44,37 @@ include('header.php');
 
           <div class="skill-container">
             <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div class="h4">Website design & development</div>
+            <div class="text-large">Website design & development</div>
           </div>
 
           <div class="skill-container">
             <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div class="h4">HTML, CSS, JavaScript, PHP</div>
+            <div class="text-large">HTML, CSS, JavaScript</div>
           </div>
 
           <div class="skill-container">
             <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div class="h4">WordPress</div>
+            <div class="text-large">WordPress &amp; PHP</div>
           </div>
 
           <div class="skill-container">
             <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div class="h4">UI/UX design</div>
+            <div class="text-large">UI/UX design</div>
           </div>
 
           <div class="skill-container">
             <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div class="h4">Adobe creative apps</div>
+            <div class="text-large">Adobe creative apps</div>
           </div>
 
           <div class="skill-container">
             <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div class="h4">Branding &amp; style guides</div>
+            <div class="text-large">Branding &amp; style guides</div>
           </div>
 
           <div class="skill-container">
             <div><i class="circle-icon fa-solid fa-code"></i></div>
-            <div class="h4">Application design systems</div>
+            <div class="text-large">Application design systems</div>
           </div>
 
         </div>
