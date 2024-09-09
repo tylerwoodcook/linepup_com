@@ -25,7 +25,7 @@
         <div class="header-title-container">
           <div>
             <a href="/">
-                <img class="header-logo" src="lp-logo-sticker.png">
+                <img class="header-logo" src="https://linepup.com/lp-logo-sticker.png">
             </a>
           </div>
           <div>
