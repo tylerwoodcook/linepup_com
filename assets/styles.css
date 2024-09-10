@@ -64,7 +64,7 @@ ul {
 }
 
 a {
-  color: #D12343;
+  color: #c14d63;
 }
 .text-large {
   font-size: 19px;
@@ -178,11 +178,11 @@ div.section {
 .skill-container {
   display: flex;
   align-items: center;
-  border: 1px solid #F5516F;
+  border: 1px solid #c14d63;
   border-radius: 6px;
 }
 .skill-icon {
-  background-color: #F5516F;
+  background-color: #c14d63;
   font-size: 19px;
   color: #fff;
   display: flex;
