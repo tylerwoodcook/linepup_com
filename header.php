@@ -42,3 +42,8 @@
           </div>
         </div>
     </div>
+    <div id="site-nav"">
+      <div><a href="/blog/">BLOG</a></div>
+      <div><a href="https://creativemarket.com/LinepupDesignCo" target="_blank">STORE</a></div>
+      <div><a href="https://github.com/tylerwoodcook" target="_blank">GITHUB</a></div>
+    </div>
