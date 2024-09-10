@@ -114,6 +114,7 @@ div.section {
 }
 .header-title-container {
   display: flex;
+  margin-top: -24px;
   flex-direction: row;
   gap: 24px;
   align-items: center;

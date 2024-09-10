@@ -30,8 +30,8 @@
           </a>
         </div>
         <div>
-          <p class="header-title" style="margin-bottom: -16px;">LINEPUP</p>
-          <p>Designer &amp; Developer</p>
+          <p class="h2 header-title" style="margin-bottom: -16px;">LINEPUP</p>
+          <p class="m-0">Designer &amp; Developer</p>
         </div>
       </div><!-- END header-title-container -->
       <div id="site-nav"">
