@@ -15,35 +15,37 @@
   <!-- JavaScript -->
   <script src="/assets/scripts.js" defer></script>
   <script src="https://kit.fontawesome.com/9c9528a7c3.js" crossorigin="anonymous"></script>
-  <!-- CSS --> 
+  <!-- CSS -->
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
 
 <body id="body" class="theme-light">
   <div class="page-content">
     <div class="section header-section">
-        <div class="header-title-container">
-          <div>
-            <a href="/">
-                <img class="header-logo" src="https://linepup.com/lp-logo-sticker.png">
-            </a>
-          </div>
-          <div>
-            <p class="h1 header-title mb-0">Linepup</p>
-            <p class="mb-0">Designer &amp; Developer</p>
-          </div>
+      <div class="header-title-container">
+        <div>
+          <a href="/">
+            <img class="header-logo" src="https://linepup.com/lp-logo-sticker.png">
+          </a>
         </div>
-        <div class="header-theme-container">
-          <div>
-            <button onclick="lightTheme();" id="light-theme">&#9728;&#65039;</button>
-          </div>
-          <div>
-            <button onclick="darkTheme();" id="dark-theme">&#127761;</button>
-          </div>
+        <div>
+          <p class="h1 header-title mb-0">Linepup</p>
+          <p class="mb-0">Designer &amp; Developer</p>
         </div>
-    </div>
-    <div id="site-nav"">
-      <div><a href="/blog/">BLOG</a></div>
+      </div>
+      <div id="site-nav"">
+        <div><a href=" /blog/">BLOG</a></div>
       <div><a href="https://creativemarket.com/LinepupDesignCo" target="_blank">STORE</a></div>
       <div><a href="https://github.com/tylerwoodcook" target="_blank">GITHUB</a></div>
+      <div class="header-theme-container">
+        <div>
+          <button onclick="lightTheme();" id="light-theme">&#9728;&#65039;</button>
+        </div>
+        <div>
+          <button onclick="darkTheme();" id="dark-theme">&#127761;</button>
+        </div>
+      </div>
+
     </div>
+
+  </div>
