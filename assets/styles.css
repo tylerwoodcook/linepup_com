@@ -64,13 +64,13 @@ ul {
 }
 
 a {
-  color: #C14E63;
+  color: #D12343;
 }
 .text-large {
   font-size: 19px;
 }
 .dark-theme-links {
-  color: #D1A659;
+  color: #F95D79;
 }
 
 @media screen and (max-width: 600px) {
@@ -178,11 +178,11 @@ div.section {
 .skill-container {
   display: flex;
   align-items: center;
-  border: 1px solid #C14E63;
+  border: 1px solid #D12343;
   border-radius: 6px;
 }
 .skill-icon {
-  background-color: #C14E63;
+  background-color: #D12343;
   font-size: 19px;
   color: #fff;
   display: flex;
