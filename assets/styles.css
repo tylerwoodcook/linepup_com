@@ -202,6 +202,12 @@ div.section {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
+body.theme-dark .skill-container {
+  border: 1px solid #F5516F;
+}
+body.theme-dark .skill-icon {
+  background-color: #F5516F;
+}
 @media screen and (max-width: 600px) {
   .col-3 {
     grid-template-columns: 1fr;
