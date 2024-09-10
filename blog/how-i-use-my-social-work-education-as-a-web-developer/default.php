@@ -4,7 +4,7 @@ include('../../header.php');
 ?>
 
     <div class="section">
-      <h2>How I use my social work education as a web developer</h2>
+      <h1>How I use my social work education as a web developer</h1>
       <p>
         The route I took to fall in love with web development may seem odd. I
         graduated with a bachelor's degree in social work. Throughout my
@@ -16,7 +16,7 @@ include('../../header.php');
         applicable in the world of web development.
       </p>
 
-      <h3>Empathy: Understanding the User's Perspective</h3>
+      <h2>Empathy: Understanding the User's Perspective</h2>
       <p>
         A good developer empathizes with the end user. We are tasked with
         building experiences that solve users' needs in a seemless and
@@ -26,7 +26,7 @@ include('../../header.php');
       </p>
 
       <div id="cultural-competence" class="anchor-link-offset"><!-- ANCHOR LINK OFFSET --></div>
-      <h3>Cultural Competence: Thinking Outside My Limited Experiences</h3>
+      <h2>Cultural Competence: Thinking Outside My Limited Experiences</h2>
       <p>
         Cultural competence is still a critical skill in the world of web dev.
         Imagine you're managing a website that is used by people around the
@@ -50,7 +50,7 @@ include('../../header.php');
           inclusive of people in various cultures and people groups?
         </li>
       </ul>
-      <h3>Advocacy: Standing Up for the User's Best Interest</h3>
+      <h2>Advocacy: Standing Up for the User's Best Interest</h2>
 
       <p>
         I also mentioned advocacy in my list of social work skills. Social
@@ -73,7 +73,7 @@ include('../../header.php');
         significant amount of power over people's daily lives.
       </p>
 
-      <h3 id="dark-patterns">The Dark Realm of Dark Patterns</h3>
+      <h2 id="dark-patterns">The Dark Realm of Dark Patterns</h2>
 
       <p>
         I mentioned dark patterns earlier. Dark patterns are manipulative
