@@ -40,10 +40,10 @@
         <div><a class="nav-item" href="https://github.com/tylerwoodcook" target="_blank">GITHUB</a></div>
         <div class="header-theme-container">
           <div>
-            <button class="nav-item" onclick="lightTheme();" id="light-theme">&#9728;&#65039;</button>
+            <a class="nav-item" onclick="lightTheme();" id="light-theme">&#9728;&#65039;</a>
           </div>
           <div>
-            <button class="nav-item" onclick="darkTheme();" id="dark-theme">&#127761;</button>
+            <a class="nav-item" onclick="darkTheme();" id="dark-theme">&#127761;</a>
           </div>
         </div>
 

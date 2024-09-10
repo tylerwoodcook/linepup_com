@@ -149,6 +149,7 @@ body.theme-dark .nav-item {
 .nav-item:hover {
   background-color: #c14d63;
   color: #fff;
+  cursor: pointer;
 }
 body.theme-dark .nav-item:hover {
   background-color: #F5516F;
