@@ -72,9 +72,6 @@ body.theme-dark a {
 .text-large {
   font-size: 19px;
 }
-/*.dark-theme-links {
-  color: #F5516F;
-}*/
 
 @media screen and (max-width: 600px) {
   h1, .h1 {font-size:40px;}
