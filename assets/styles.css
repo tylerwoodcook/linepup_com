@@ -108,8 +108,8 @@ div.section {
     display: grid;
     grid-template-columns: 4fr 1fr;
     align-items: center;
-    margin-bottom: 48px;
-    padding-bottom: 24px;
+    margin-bottom: 56px;
+    padding: 24px 0;
     border-bottom: 1px solid #d0d0d0;
 }
 .header-title-container {
@@ -117,7 +117,7 @@ div.section {
   margin-top: -24px;
   flex-direction: row;
   gap: 24px;
-  align-items: center;
+  align-items: start;
 }
 .header-logo {
   max-width: 100px;
