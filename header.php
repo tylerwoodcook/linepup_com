@@ -30,7 +30,7 @@
           </a>
         </div>
         <div>
-          <p class="h2 header-title mb-0">Linepup</p>
+          <p class="header-title" style="margin-bottom: -16px;">LINEPUP</p>
           <p>Designer &amp; Developer</p>
         </div>
       </div><!-- END header-title-container -->
