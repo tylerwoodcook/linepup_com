@@ -136,6 +136,23 @@ div.section {
   flex-direction: row;
   gap: 16px;
 }
+.nav-item {
+  padding: 4px 12px;
+  border: 1px solid #c14d63;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: transparent;
+}
+body.theme-dark .nav-item {
+  border-color: #F5516F;
+}
+.nav-item:hover {
+  background-color: #c14d63;
+  color: #fff;
+}
+body.theme-dark .nav-item:hover {
+  background-color: #F5516F;
+}
 @media screen and (max-width: 500px) {
   .header-section {
     margin-bottom: 32px;
