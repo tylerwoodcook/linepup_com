@@ -70,7 +70,7 @@ a {
   font-size: 19px;
 }
 .dark-theme-links {
-  color: #F95D79;
+  color: #F5516F;
 }
 
 @media screen and (max-width: 600px) {
@@ -178,11 +178,11 @@ div.section {
 .skill-container {
   display: flex;
   align-items: center;
-  border: 1px solid #D12343;
+  border: 1px solid #F5516F;
   border-radius: 6px;
 }
 .skill-icon {
-  background-color: #D12343;
+  background-color: #F5516F;
   font-size: 19px;
   color: #fff;
   display: flex;
