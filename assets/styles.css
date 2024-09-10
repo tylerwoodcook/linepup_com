@@ -66,12 +66,15 @@ ul {
 a {
   color: #c14d63;
 }
+body.theme-dark a {
+  color: #F5516F;
+}
 .text-large {
   font-size: 19px;
 }
-.dark-theme-links {
+/*.dark-theme-links {
   color: #F5516F;
-}
+}*/
 
 @media screen and (max-width: 600px) {
   h1, .h1 {font-size:40px;}
