@@ -21,7 +21,7 @@
 
 <body id="body" class="theme-light">
   <div class="page-content">
-    
+
     <div class="section header-section">
       <div class="header-title-container">
         <div>
@@ -35,15 +35,15 @@
         </div>
       </div><!-- END header-title-container -->
       <div id="site-nav"">
-        <div><a href=" /blog/">BLOG</a></div>
-        <div><a href="https://creativemarket.com/LinepupDesignCo" target="_blank">STORE</a></div>
-        <div><a href="https://github.com/tylerwoodcook" target="_blank">GITHUB</a></div>
+        <div><a class="nav-item" href=" /blog/">BLOG</a></div>
+        <div><a class="nav-item" href="https://creativemarket.com/LinepupDesignCo" target="_blank">STORE</a></div>
+        <div><a class="nav-item" href="https://github.com/tylerwoodcook" target="_blank">GITHUB</a></div>
         <div class="header-theme-container">
           <div>
-            <button onclick="lightTheme();" id="light-theme">&#9728;&#65039;</button>
+            <button class="nav-item" onclick="lightTheme();" id="light-theme">&#9728;&#65039;</button>
           </div>
           <div>
-            <button onclick="darkTheme();" id="dark-theme">&#127761;</button>
+            <button class="nav-item" onclick="darkTheme();" id="dark-theme">&#127761;</button>
           </div>
         </div>
 
