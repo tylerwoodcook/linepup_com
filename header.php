@@ -30,8 +30,8 @@
           </a>
         </div>
         <div>
-          <p class="h1 header-title mb-0">Linepup</p>
-          <p class="mb-0">Designer &amp; Developer</p>
+          <p class="h2 header-title mb-0">Linepup</p>
+          <p>Designer &amp; Developer</p>
         </div>
       </div><!-- END header-title-container -->
       <div id="site-nav"">

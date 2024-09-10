@@ -107,8 +107,9 @@ div.section {
 .header-section {
     display: grid;
     grid-template-columns: 4fr 1fr;
+    align-items: center;
     margin-bottom: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 24px;
     border-bottom: 1px solid #d0d0d0;
 }
 .header-title-container {
@@ -118,7 +119,7 @@ div.section {
   align-items: center;
 }
 .header-logo {
-  max-width: 150px;
+  max-width: 100px;
 }
 .header-title {
   font-size: 64px;
