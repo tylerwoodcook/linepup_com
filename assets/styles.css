@@ -164,6 +164,7 @@ body.theme-dark .nav-item:hover {
   border: 1px solid #f0f0f0;
   text-decoration: none;
   background-color: transparent;
+  transition: all 0.5s;
 }
 body.theme-dark .nav-item-theme-icon {
   border: 1px solid #444;
