@@ -158,6 +158,24 @@ body.theme-dark .nav-item {
 body.theme-dark .nav-item:hover {
   background-color: #F5516F;
 }
+.nav-item-theme-icon {
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid #f0f0f0;
+  text-decoration: none;
+  background-color: transparent;
+}
+body.theme-dark .nav-item-theme-icon {
+  border: 1px solid #444;
+}
+.nav-item-theme-icon:hover {
+  background-color: #f0f0f0;;
+  cursor: pointer;
+}
+body.theme-dark .nav-item-theme-icon:hover {
+  background-color: #444;
+}
+
 @media screen and (max-width: 500px) {
   .header-section {
     margin-bottom: 32px;
