@@ -149,6 +149,7 @@ div.section {
   border-radius: 2px;
   text-decoration: none;
   background-color: transparent;
+  transition: all 0.5s;
 }
 body.theme-dark .nav-item {
   border-color: #444444;
