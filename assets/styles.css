@@ -140,24 +140,29 @@ div.section {
   flex-wrap: wrap;
   gap: 16px;
 }
+
+
 .nav-item {
   padding: 4px 12px;
-  border: 1px solid #c14d63;
-  border-radius: 4px;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
   text-decoration: none;
   background-color: transparent;
+  font-family: "Gabarito", sans-serif;
 }
 body.theme-dark .nav-item {
-  border-color: #F5516F;
+  border-color: #444444;
 }
 .nav-item:hover {
-  background-color: #c14d63;
-  color: #fff;
+  background-color: #f0f0f0;
   cursor: pointer;
 }
 body.theme-dark .nav-item:hover {
-  background-color: #F5516F;
+  background-color: #444444;
+  color: #fff
 }
+
+
 .nav-item-theme-icon {
   padding: 8px;
   border-radius: 50px;
