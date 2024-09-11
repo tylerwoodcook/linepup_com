@@ -35,9 +35,9 @@
         </div>
       </div><!-- END header-title-container -->
       <div id="site-nav"">
-        <div><a class="nav-item" href=" /blog/">Blog</a></div>
-        <div><a class="nav-item" href="https://creativemarket.com/LinepupDesignCo" target="_blank">Store</a></div>
-        <div><a class="nav-item" href="https://github.com/tylerwoodcook" target="_blank">GitHub</a></div>
+        <div style="margin-top: 4px;"><a class="nav-item" href=" /blog/">Blog</a></div>
+        <div style="margin-top: 4px;"><a class="nav-item" href="https://creativemarket.com/LinepupDesignCo" target="_blank">Store</a></div>
+        <div style="margin-top: 4px;"><a class="nav-item" href="https://github.com/tylerwoodcook" target="_blank">GitHub</a></div>
         <div class="header-theme-container">
           <div>
             <a class="nav-item-theme-icon" onclick="lightTheme();" id="light-theme">&#9728;&#65039;</a>
