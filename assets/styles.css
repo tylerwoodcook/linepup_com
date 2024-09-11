@@ -145,6 +145,7 @@ div.section {
 .nav-item {
   padding: 4px 12px;
   border: 1px solid #d0d0d0;
+  color: #222222;
   border-radius: 2px;
   text-decoration: none;
   background-color: transparent;
@@ -174,7 +175,7 @@ body.theme-dark .nav-item-theme-icon {
   border: 1px solid #444;
 }
 .nav-item-theme-icon:hover {
-  background-color: #d0d0d0;;
+  background-color: #f0f0f0;;
   cursor: pointer;
 }
 body.theme-dark .nav-item-theme-icon:hover {
