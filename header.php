@@ -35,6 +35,7 @@
         </div>
       </div><!-- END header-title-container -->
       <div id="site-nav"">
+        <div style="margin-top: 4px;"><a class="nav-item" href="/">Home</a></div>
         <div style="margin-top: 4px;"><a class="nav-item" href=" /blog/">Blog</a></div>
         <div style="margin-top: 4px;"><a class="nav-item" href="https://creativemarket.com/LinepupDesignCo" target="_blank">Store</a></div>
         <div style="margin-top: 4px;"><a class="nav-item" href="https://github.com/tylerwoodcook" target="_blank">GitHub</a></div>
