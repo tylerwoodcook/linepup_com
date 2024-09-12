@@ -106,7 +106,7 @@ div.section {
 
 .header-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 5fr;
     gap: 24px;
     align-items: start;
     margin-bottom: 56px;
