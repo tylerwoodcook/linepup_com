@@ -6,8 +6,6 @@ include('header.php');
     <div class="section">
         <h1>Hey, I'm Tyler and Building websites is my dream job.</h1>
         <p>I'm a web and graphic designer from the East Coast of USA with over 5 years of professional experience. I love designing aesthetic and efficient UI/UX for websites and applications. I thrive on creativity and I love to learn new things.</p>
-        <h2>WTHeck is "Linepup"?</h2>
-        <p>For a while I used Linepup as my design company name. Now it's kind of become an online pseudonym, so I kept it. I like having something other than my real name to use online... I guess for privacy reasons? I don't know, call me paranoid.</p>
         <h2>How it started</h2>
         <p>I’ve been a professional designer for over five years, and I genuinely love what I do. In 2016, I started my own part-time freelance design company, taking on any creative projects I could get my hands on. Over the next few years I build an impressive portfolio of clients, working toward taking my first full time position in design.</p>
         <p>In 2019, I took my design skills full time with Ready Training Online, an online learning & LMS company. During this time, I built not only my skills as a designer, but also got the opportunity to design and develop a few websites from scratch. I quickly realized how much I love building websites and functional user interfaces.</p>
