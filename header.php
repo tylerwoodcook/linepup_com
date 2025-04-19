@@ -24,21 +24,19 @@
 
     <div class="section header-section">
       <div class="header-title-container">
-        <div>
-          <a href="/">
-            <img class="header-logo" src="https://linepup.com/lp-logo-sticker.png">
+          <a class="header-logo" href="/">
+            <img src="/linepup-logo-500px.png">
           </a>
-        </div>
-        <div>
-          <p class="h2 header-title" style="margin-bottom: -16px;">LINEPUP</p>
-          <p class="m-0">Designer &amp; Developer</p>
-        </div>
+          <a class="header-logo-thumb" href="/">
+            <img src="/linepup-thumbs-up.png">
+          </a>
       </div><!-- END header-title-container -->
       <div id="site-nav"">
-        <div style="margin-top: 4px;"><a class="nav-item" href="/">Home</a></div>
-        <div style="margin-top: 4px;"><a class="nav-item" href=" /blog/">Blog</a></div>
-        <div style="margin-top: 4px;"><a class="nav-item" href="https://creativemarket.com/LinepupDesignCo" target="_blank">Store</a></div>
-        <div style="margin-top: 4px;"><a class="nav-item" href="https://github.com/tylerwoodcook" target="_blank">GitHub</a></div>
+        <div><a class="nav-item" href="/">Home</a></div>
+        <div><a class="nav-item" href=" /blog/">Blog</a></div>
+        <div><a class="nav-item" href="https://creativemarket.com/LinepupDesignCo" target="_blank">Store</a></div>
+        <div><a class="nav-item" target="_blank" href="https://www.linkedin.com/in/twoodcook/">LinkedIn</a></div>
+        <div><a class="nav-item" href="https://github.com/tylerwoodcook" target="_blank">GitHub</a></div>
         <div class="header-theme-container">
           <div>
             <a class="nav-item-theme-icon" onclick="lightTheme();" id="light-theme">&#9728;&#65039;</a>

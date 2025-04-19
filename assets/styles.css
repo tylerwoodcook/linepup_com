@@ -1,6 +1,7 @@
 body {
   font-family: "IBM Plex Serif", serif;
-  transition: all 0.5s;
+  transition: all 0.2s;
+  margin: 0;
 }
 .theme-light {
     background-color: #fff;
@@ -96,7 +97,7 @@ div.page-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 8px;
+  padding: 40px 16px;
 }
 
 div.section {
@@ -106,23 +107,39 @@ div.section {
 
 .header-section {
     display: grid;
-    grid-template-columns: 4fr 5fr;
+    align-items: center;
+    grid-template-columns: auto 1fr;
     gap: 24px;
-    align-items: start;
-    margin-bottom: 56px;
-    padding: 24px 0;
-    border-bottom: 1px solid #d0d0d0;
+    justify-content: space-between;
+    margin: 24px 0;
+    padding: 0;
 }
 .header-title-container {
   display: flex;
-  margin-top: -24px;
   flex-direction: row;
-  gap: 24px;
-  align-items: center;
 }
-.header-logo {
+.header-logo img {
   max-width: 100px;
+  transition: all 0.2s;
+  position: relative;
+  z-index: 9;
 }
+.header-logo-thumb img {
+  height: 70px;
+  transform: translateX(-60px) scale(80%);
+  transition: all 0.2s;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+}
+.header-title-container:hover .header-logo img {
+  transform: scale(110%) rotate(-5deg);
+}
+.header-title-container:hover .header-logo-thumb img {
+  transform: translateX(-20px) scale(100%);
+  opacity: 1;
+}
+
 .header-title {
   font-size: 48px;
   margin-bottom: 16px;
@@ -136,6 +153,7 @@ div.section {
 }
 #site-nav {
   display: flex;
+  justify-content: end;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 16px;
@@ -149,7 +167,8 @@ div.section {
   border-radius: 2px;
   text-decoration: none;
   background-color: transparent;
-  transition: all 0.5s;
+  transition: all 0.2s;
+  font-size: 16px;
 }
 body.theme-dark .nav-item {
   border-color: #444444;
@@ -171,7 +190,7 @@ body.theme-dark .nav-item:hover {
   border: 1px solid #d0d0d0;
   text-decoration: none;
   background-color: transparent;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 body.theme-dark .nav-item-theme-icon {
   border: 1px solid #444;
@@ -204,6 +223,12 @@ body.theme-dark .nav-item-theme-icon:hover {
   position: relative;
   top: -40px;
   visibility: hidden;
+}
+/* ------- FOOTER ------- */
+#global-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
 /* ------- UTILITY ------- */
