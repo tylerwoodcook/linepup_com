@@ -262,20 +262,15 @@ body.theme-dark .nav-item-theme-icon:hover {
   padding: 16px;
   flex: 1;
 }
-.col-3 {
+.col-1 {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
 }
 body.theme-dark .skill-container {
   border: 1px solid #F5516F;
 }
 body.theme-dark .skill-icon {
   background-color: #F5516F;
-}
-@media screen and (max-width: 600px) {
-  .col-3 {
-    grid-template-columns: 1fr;
-  }
 }

@@ -15,7 +15,7 @@ include('header.php');
         <p>Today, I’m proud to be a UI Developer for such a renowned company with an honorable mission to share knowledge with the world.</p>
         <h2>Skills &amp; abilities</h2>
 
-        <div class="col-3 mb-40">
+        <div class="col-1 mb-40">
 
           <div class="skill-container">
             <div class="skill-icon"><i class="fa-solid fa-desktop"></i></div>
