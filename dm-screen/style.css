@@ -173,6 +173,13 @@ code {
 .mb-32 {margin-bottom: 32px;}
 .mb-40 {margin-bottom: 40px;}
 
+/* Style external links */
+a[href^="http"]:not([href*="linepup.com"])::after {
+  content: "🔗";       /* Unicode icon, or use a background image */
+  margin-left: 0.25em; /* some spacing */
+  font-size: 0.9em;    /* keep it subtle */
+}
+
 /* TABLE STYLES */
 table, tr {
   margin: 0;
