@@ -2,9 +2,11 @@
   <p>
     <a class="nav-item" href="/">Home</a>
   </p>
+  <!--
   <p>
     <a class="nav-item" href="/blog/">Blog</a>
   </p>
+-->
   <p>
     <a class="nav-item" target="_blank" href="https://creativemarket.com/LinepupDesignCo">Store</a>
   </p>
