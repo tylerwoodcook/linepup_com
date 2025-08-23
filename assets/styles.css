@@ -156,6 +156,7 @@ div.section {
   justify-content: end;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   gap: 16px;
 }
 
@@ -186,6 +187,11 @@ body.theme-dark .nav-item:hover {
 
 .nav-item-theme-icon {
   padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
   border-radius: 50px;
   border: 1px solid #d0d0d0;
   text-decoration: none;
