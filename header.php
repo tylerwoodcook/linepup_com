@@ -33,7 +33,7 @@
       </div><!-- END header-title-container -->
       <div id="site-nav"">
         <div><a class="nav-item" href="/">Home</a></div>
-        <div><a class="nav-item" href=" /blog/">Blog</a></div>
+        <!-- <div><a class="nav-item" href=" /blog/">Blog</a></div> -->
         <div><a class="nav-item" href="https://creativemarket.com/LinepupDesignCo" target="_blank">Store</a></div>
         <div><a class="nav-item" target="_blank" href="https://www.linkedin.com/in/twoodcook/">LinkedIn</a></div>
         <div><a class="nav-item" href="https://github.com/tylerwoodcook" target="_blank">GitHub</a></div>
