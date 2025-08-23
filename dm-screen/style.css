@@ -166,6 +166,12 @@ code {
   padding: 0 4px;
   border-radius: 2px;
 }
+table,
+tbody,
+tr,
+td {
+    font-size: var(--font-regular);
+}
 .mb-0 {margin-bottom: 0;}
 .mb-8 {margin-bottom: 8px;}
 .mb-16 {margin-bottom: 16px;}
@@ -311,7 +317,7 @@ td {
   width: 48px;
   height: 48px;
   background-color: var(--green);
-  opacity: 25%;
+  opacity: 60%;
   z-index: 999;
   top: 0px;
   left: 0px;
