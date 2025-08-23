@@ -175,9 +175,10 @@ code {
 
 /* Style external links */
 a[href^="http"]:not([href*="linepup.com"])::after {
-  content: "🔗";       /* Unicode icon, or use a background image */
-  margin-left: 0.25em; /* some spacing */
-  font-size: 0.9em;    /* keep it subtle */
+    font-family: "Font Awesome 6 Free";
+  content: "\f08e";
+  margin-left: 0.25em;
+  font-size: 0.9em;
 }
 
 /* TABLE STYLES */
