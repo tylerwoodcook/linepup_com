@@ -176,9 +176,11 @@ code {
 /* Style external links */
 a[href^="http"]:not([href*="linepup.com"])::after {
     font-family: "Font Awesome 6 Free";
+    font-size: 10px;
     font-weight: 900; /* solid */
     content: "\f08e"; /* external-link-alt */
-    margin-left: 0.25em;
+    margin-left: 5px;
+    color: rgba(255,255,255,0.5);
 }
 
 /* TABLE STYLES */
