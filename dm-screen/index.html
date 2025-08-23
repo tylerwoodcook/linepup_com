@@ -1140,14 +1140,23 @@ button.onclick = function (e) {
   logResult.innerHTML = '<i class="fa-solid fa-dice-five"></i>';
   setTimeout(function () {
     logResult.innerHTML = '<i class="fa-solid fa-dice-one"></i>';
+  }, 100);
+    setTimeout(function () {
+    logResult.innerHTML = '<i class="fa-solid fa-dice-three"></i>';
   }, 300);
   setTimeout(function () {
+    logResult.innerHTML = '<i class="fa-solid fa-dice-six"></i>';
+  }, 500);
+  setTimeout(function () {
+    logResult.innerHTML = '<i class="fa-solid fa-dice-two"></i>';
+  }, 700);
+    setTimeout(function () {
     logResult.innerHTML = '<i class="fa-solid fa-dice-four"></i>';
-  }, 600);
+  }, 900);
   setTimeout(function () {
     logResult.innerHTML = result;
     console.log(result);
-  }, 900);
+  }, 1100);
 };
 
 // --------------------------- //
