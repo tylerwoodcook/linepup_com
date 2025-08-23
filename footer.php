@@ -2,18 +2,10 @@
   <p>
     <a class="nav-item" href="/">Home</a>
   </p>
-  <!--
   <p>
-    <a class="nav-item" href="/blog/">Blog</a>
-  </p>
--->
-  <p>
-    <a class="nav-item" target="_blank" href="https://creativemarket.com/LinepupDesignCo">Store</a>
+    <a class="nav-item" href="/dice-roller/">Dice Roller</a>
   </p>
   <p>
-    <a class="nav-item" target="_blank" href="https://www.linkedin.com/in/twoodcook/">LinkedIn</a>
-  </p>
-  <p>
-    <a class="nav-item" target="_blank" href="https://github.com/tylerwoodcook">GitHub</a>
+    <a class="nav-item" href="/dm-screen/">Dungeon Master Screen</a>
   </p>
 </div>
