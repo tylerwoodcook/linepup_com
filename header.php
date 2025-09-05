@@ -32,8 +32,8 @@
           </a>
       </div><!-- END header-title-container -->
       <div id="site-nav"">
-        <div><a class="nav-item" href="/fun-stuff/fun-stuff.php">Fun Stuff</a></div>
-        <div><a class="nav-item" href="/music/music.php">Music</a></div>
+        <div><a class="nav-item" href="/fun-stuff/default.php">Fun Stuff</a></div>
+        <div><a class="nav-item" href="/music/default.php">Music</a></div>
         <div><a class="nav-item" href="https://creativemarket.com/LinepupDesignCo" target="_blank">Store</a></div>
         <div class="header-theme-container">
           <div>
