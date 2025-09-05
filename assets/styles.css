@@ -3,50 +3,64 @@ body {
   transition: all 0.2s;
   margin: 0;
 }
+
 .theme-light {
-    background-color: #fff;
-    color: #222;
+  background-color: #fff;
+  color: #222;
 }
+
 .theme-dark {
-    background-color: #222;
-    color: #fff;
+  background-color: #222;
+  color: #fff;
 }
 
 /* ------- TYPOGRAPHY ------- */
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-family: "Gabarito", sans-serif;
   font-weight: 700;
   margin-top: 0;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 56px;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 40px;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 28px;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 20px;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 16px;
   text-transform: uppercase;
 }
 
-p, .p {
+p,
+.p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.7;
@@ -67,20 +81,45 @@ ul {
 a {
   color: #c14d63;
 }
+
 body.theme-dark a {
   color: #F5516F;
 }
+
 .text-large {
   font-size: 19px;
 }
 
 @media screen and (max-width: 600px) {
-  h1, .h1 {font-size:40px;}
-  h2, .h2 {font-size: 32px;}
-  h3, .h3 {font-size: 24px;}
-  h4, .h4 {font-size: 18px;}
-  p, .p {font-size: 16px;}
-  li {font-size: 16px;}
+
+  h1,
+  .h1 {
+    font-size: 40px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 32px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 24px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 18px;
+  }
+
+  p,
+  .p {
+    font-size: 16px;
+  }
+
+  li {
+    font-size: 16px;
+  }
 }
 
 hr {
@@ -106,24 +145,27 @@ div.section {
 }
 
 .header-section {
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto 1fr;
-    gap: 24px;
-    justify-content: space-between;
-    margin: 24px 0;
-    padding: 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  justify-content: space-between;
+  margin: 24px 0;
+  padding: 0;
 }
+
 .header-title-container {
   display: flex;
   flex-direction: row;
 }
+
 .header-logo img {
   max-width: 100px;
   transition: all 0.2s;
   position: relative;
   z-index: 9;
 }
+
 .header-logo-thumb img {
   height: 70px;
   transform: translateX(-60px) scale(80%);
@@ -132,9 +174,11 @@ div.section {
   z-index: 1;
   opacity: 0;
 }
+
 .header-title-container:hover .header-logo img {
   transform: scale(110%) rotate(-5deg);
 }
+
 .header-title-container:hover .header-logo-thumb img {
   transform: translateX(-20px) scale(100%);
   opacity: 1;
@@ -144,6 +188,7 @@ div.section {
   font-size: 48px;
   margin-bottom: 16px;
 }
+
 .header-theme-container {
   justify-self: end;
   display: flex;
@@ -151,6 +196,7 @@ div.section {
   gap: 8px;
 
 }
+
 #site-nav {
   display: flex;
   justify-content: end;
@@ -171,14 +217,17 @@ div.section {
   transition: all 0.2s;
   font-size: 16px;
 }
+
 body.theme-dark .nav-item {
   border-color: #444444;
   color: #ffffff;
 }
+
 .nav-item:hover {
   background-color: #f0f0f0;
   cursor: pointer;
 }
+
 body.theme-dark .nav-item:hover {
   background-color: #444444;
   color: #fff
@@ -198,13 +247,17 @@ body.theme-dark .nav-item:hover {
   background-color: transparent;
   transition: all 0.2s;
 }
+
 body.theme-dark .nav-item-theme-icon {
   border: 1px solid #444;
 }
+
 .nav-item-theme-icon:hover {
-  background-color: #f0f0f0;;
+  background-color: #f0f0f0;
+  ;
   cursor: pointer;
 }
+
 body.theme-dark .nav-item-theme-icon:hover {
   background-color: #444;
 }
@@ -215,9 +268,11 @@ body.theme-dark .nav-item-theme-icon:hover {
     padding-bottom: 32px;
     grid-template-columns: 1fr;
   }
+
   .header-logo {
     max-width: 80px;
   }
+
   .header-title {
     font-size: 40px;
     margin-bottom: 8px;
@@ -230,22 +285,121 @@ body.theme-dark .nav-item-theme-icon:hover {
   top: -40px;
   visibility: hidden;
 }
+
+
+
+
+
+
+/* ------ MUSIC ------- */
+.music-track-container {
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
+  .music-track-container {
+    padding: 24px;
+  }
+}
+.lyrics-section {
+  font-family: "Gabarito", sans-serif;
+  font-weight: 700;
+}
+.download-audio {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: #c14d63;
+  border-radius: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Audio Player HTML */
+audio::-webkit-media-controls-panel {
+  background-color: #c14d63;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: #fff;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #fff;
+  border-radius: 64px;
+}
+
+/* 
+audio::-webkit-media-controls-volume-slider
+audio::-webkit-media-controls-volume-slider-container
+audio::-webkit-media-controls-timeline-container
+audio::-webkit-media-controls-timeline
+audio::-webkit-media-controls-seek-back-button
+audio::-webkit-media-controls-seek-forward-button
+audio::-webkit-media-controls-fullscreen-button
+audio::-webkit-media-controls-rewind-button
+audio::-webkit-media-controls-return-to-realtime-button
+audio::-webkit-media-controls-toggle-closed-captions-button */
+
+
+
+
+
+
 /* ------- FOOTER ------- */
 #global-footer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #d0d0d0;
+  padding-top: 24px;
+  margin-top: 24px;
   gap: 24px;
 }
 
 /* ------- UTILITY ------- */
-.mb-0 {margin-bottom: 0;}
-.mb-8 {margin-bottom: 8px;}
-.mb-16 {margin-bottom: 16px;}
-.mb-32 {margin-bottom: 32px;}
-.mb-40 {margin-bottom: 40px;}
-.mb-48 {margin-bottom: 48px;}
-.mb-56 {margin-bottom: 56px;}
-.mb-64 {margin-bottom: 64px;}
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-56 {
+  margin-bottom: 56px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
 
 .skill-container {
   display: flex;
@@ -253,6 +407,7 @@ body.theme-dark .nav-item-theme-icon:hover {
   border: 1px solid #c14d63;
   border-radius: 6px;
 }
+
 .skill-icon {
   background-color: #c14d63;
   font-size: 19px;
@@ -263,20 +418,24 @@ body.theme-dark .nav-item-theme-icon:hover {
   width: 64px;
   height: 100%;
 }
+
 .skill-text {
   font-size: 19px;
   padding: 16px;
   flex: 1;
 }
+
 .col-1 {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(1, 1fr);
   gap: 12px;
 }
+
 body.theme-dark .skill-container {
   border: 1px solid #F5516F;
 }
+
 body.theme-dark .skill-icon {
   background-color: #F5516F;
 }
