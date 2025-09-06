@@ -14,7 +14,7 @@ include('header.php');
         <p>As CorpU grew to reach new audiences globally, we caught the attention of the world’s largest marketplace for online courses, Udemy. In August 2021, CorpU was acquired by Udemy.</p>
         <p>Today, I’m proud to be a UI Developer for Udemy, a renowned company with an honorable mission to share knowledge with the world.</p>
         <h2>Skills &amp; abilities</h2>
-        <ul>
+        <ul style="margin-bottom: 24px;">
           <li>Website design & development</li>
           <li>HTML, CSS, JavaScript</li>
           <li>WordPress &amp; PHP</li>
