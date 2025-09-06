@@ -26,12 +26,9 @@ include('../header.php');
         <h2>Forest Strings</h2>
 
         <p style="margin-bottom: 40px;">
-            Forest Strings is a simple love song, at times bordering on niaeve.
-            For someone to claim that they will <i>always</i> love someone else may warrant an eye-roll from some.
-            Others may relate with the simplicity of the message.
-            The track may invoke a feeling of skepticism or even anger in those who have loved and been hurt.
-            I wanted to tap into a childlike, reckless faith that many people are afraid to embrace for the sake of self-preservation.
-            Call it foolish, call it bold, but either way, I'm choosing to believe that this love will never fade.
+            Forest Strings is a simple love song, which borders on naive.
+            It taps into a childlike, reckless faith that love can last forever.
+            Call it foolish, call it bold.
         </p>
 
         <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 24px; align-items: center; margin-bottom: 40px;">
@@ -84,7 +81,7 @@ include('../header.php');
         <h2>Far from the Tree</h2>
 
         <p style="margin-bottom: 40px;">
-            I always imagined <i>Far From the Tree</i> as the first song on an album. The ethereal, floating intro leads into a strong yet vulnerable opening message: "How could I fall so far from the tree?"
+            I always imagined <i>Far From the Tree</i> as the first song on an album.
             It portrays a sense of regret for not living up to my own expectations.
             This track leans heavily on autumnal themes, referencing the "ill-fated trees" and their bruised and damaged fruits.
             Growing up in Upstate New York, Autumn is incredibly sentimental to me, and I was always fascinated with the juxtaposition of the most beautiful time of year, which gives way to a long, frigid season of death.
@@ -132,12 +129,11 @@ include('../header.php');
             I remember feeling refreshed coming back to recording after so much time.
             I also remember getting in trouble for trying to record vocals while my wife was alseep in the next room over.
             That might seem like a frivolous detail, but it's actually quite relevant to the theme of this song.
-            You see, this was my first experience recording music as a married man; a <i>noisy</i> married man in a tiny apartment.
-            The lyrics of the song reflect the transition from a free-spirited bachelor to a dedicated husband; a husband who feels like he's failing to grow up.
+            This was my first time recording music as a married man; a <i>noisy</i> married man in a tiny apartment.
+            The lyrics of the song reflect the transition from a young man to a dedicated husband, and the challenges that come with growing up.
         </p>
         <p style="margin-bottom: 40px;">
             Musically, this song channels some very nostalgic artists from my past, including The Beach Boys, Relient K, Weezer, and The Strokes.
-            You may or may not hear those influences when you listen, but they certainly contributed to the writing process.
         </p>
 
         <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 24px; align-items: center; margin-bottom: 40px;">
@@ -202,9 +198,6 @@ include('../header.php');
             Thematically, <i>Wretched</i> is a song about being a wretched, black-hearted sinner.
             Many of the themes are inspired by Romans chapter 7, in which the author Paul is admitting that he can't do the "good" he wants to do.
             "For I do not understand my own actions. For I do not do what I want, but I do the very thing I hate." (Romans 7:15)
-            I relate to this sense of disconnection between my head and heart.
-            The head knows what it should do, but the heart is  incapable.
-            Rather than strive for perfection, it's better to admit that I'm incapable, and call upon the one who is.
         </p>
 
         <p style="margin-bottom: 40px;">
