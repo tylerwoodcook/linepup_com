@@ -14,12 +14,10 @@ include('../header.php');
         Growing up, my dad and his family traveled across the United States playing and singing gospel music.
         Although my musical style is quite different, I’ve always felt they laid the groundwork for my musical journey, which I’m sharing here with you.
     </p>
-    <p>
+    <p class="mb-40">
         That’s why I’m taking a different approach: putting works-in-progress out there.
         They may be incomplete or imperfect, but I hope you’ll still find them enjoyable to listen to.
     </p>
-    <hr>
-
 
     <!-- FOREST STRINGS -->
     <div class="music-track-container">
