@@ -25,7 +25,6 @@ include('header.php');
         </ul>
         <h2>Personal life</h2>
         <p>When I’m not working, I like to stay busy playing with my two french bulldogs (Leia and Keira), playing ice hockey, recording music, or doing other creative things.</p>
-      <hr />
     </div>
 
     <?php 

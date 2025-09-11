@@ -81,6 +81,15 @@ ul {
 a {
   color: #c14d63;
 }
+/* Remove underlines for Heading links */
+a:has(h1),
+a:has(h2),
+a:has(h3),
+a:has(h4),
+a:has(h5),
+a:has(h6) {
+  text-decoration: none;
+}
 
 body.theme-dark a {
   color: #F5516F;
@@ -292,6 +301,10 @@ body.theme-dark .nav-item-theme-icon:hover {
 
 
 /* ------ MUSIC ------- */
+body.theme-dark .music-track-container {
+  background-color: #353535;
+}
+
 .music-track-container {
   background-color: #f0f0f0;
   padding: 40px;
@@ -315,6 +328,9 @@ body.theme-dark .nav-item-theme-icon:hover {
   border-radius: 32px;
   align-items: center;
   justify-content: center;
+}
+a:has(.download-audio) {
+  text-decoration: none;
 }
 
 /* Audio Player HTML */
@@ -366,6 +382,13 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
   padding-top: 24px;
   margin-top: 24px;
   gap: 24px;
+}
+.footer-social-icon {
+  color: #222;
+  font-size: 24px;
+}
+body.theme-dark .footer-social-icon {
+  color: #fff;
 }
 
 /* ------- UTILITY ------- */
