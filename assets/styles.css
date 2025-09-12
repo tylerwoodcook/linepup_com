@@ -295,27 +295,26 @@ html.theme-dark .nav-item-theme-icon:hover {
   visibility: hidden;
 }
 
-
-
-
-
-
-/* ------ MUSIC ------- */
-html.theme-dark .music-track-container {
+/* POST CONTAINER */
+html.theme-dark .post-container {
   background-color: #353535;
 }
-
-.music-track-container {
+.post-container {
   background-color: #f0f0f0;
   padding: 40px;
   border-radius: 16px;
   margin-bottom: 40px;
 }
+
 @media screen and (max-width: 600px) {
-  .music-track-container {
+  .post-container {
     padding: 24px;
   }
 }
+
+
+
+/* ------ MUSIC ------- */
 .lyrics-section {
   font-family: "Gabarito", sans-serif;
   font-weight: 700;
@@ -367,9 +366,6 @@ audio::-webkit-media-controls-fullscreen-button
 audio::-webkit-media-controls-rewind-button
 audio::-webkit-media-controls-return-to-realtime-button
 audio::-webkit-media-controls-toggle-closed-captions-button */
-
-
-
 
 
 

@@ -20,7 +20,7 @@ include('../header.php');
     </p>
 
     <!-- FOREST STRINGS -->
-    <div class="music-track-container">
+    <div class="post-container">
         <h2>Forest Strings</h2>
 
         <p style="margin-bottom: 40px;">
@@ -75,7 +75,7 @@ include('../header.php');
 
 
     <!-- FAR FROM THE TREE -->
-    <div class="music-track-container">
+    <div class="post-container">
         <h2>Far from the Tree</h2>
 
         <p style="margin-bottom: 40px;">
@@ -119,7 +119,7 @@ include('../header.php');
 
 
     <!-- FAULTS -->
-    <div class="music-track-container">
+    <div class="post-container">
         <h2>Faults</h2>
 
         <p>
@@ -189,7 +189,7 @@ include('../header.php');
 
 
     <!-- WRETCHED -->
-    <div class="music-track-container">
+    <div class="post-container">
         <h2>Wretched</h2>
 
         <p style="margin-bottom: 40px;">
