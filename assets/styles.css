@@ -91,7 +91,7 @@ a:has(h6) {
   text-decoration: none;
 }
 
-body.theme-dark a {
+html.theme-dark a {
   color: #F5516F;
 }
 
@@ -227,7 +227,7 @@ div.section {
   font-size: 16px;
 }
 
-body.theme-dark .nav-item {
+html.theme-dark .nav-item {
   border-color: #444444;
   color: #ffffff;
 }
@@ -237,7 +237,7 @@ body.theme-dark .nav-item {
   cursor: pointer;
 }
 
-body.theme-dark .nav-item:hover {
+html.theme-dark .nav-item:hover {
   background-color: #444444;
   color: #fff
 }
@@ -257,7 +257,7 @@ body.theme-dark .nav-item:hover {
   transition: all 0.2s;
 }
 
-body.theme-dark .nav-item-theme-icon {
+html.theme-dark .nav-item-theme-icon {
   border: 1px solid #444;
 }
 
@@ -267,7 +267,7 @@ body.theme-dark .nav-item-theme-icon {
   cursor: pointer;
 }
 
-body.theme-dark .nav-item-theme-icon:hover {
+html.theme-dark .nav-item-theme-icon:hover {
   background-color: #444;
 }
 
@@ -301,7 +301,7 @@ body.theme-dark .nav-item-theme-icon:hover {
 
 
 /* ------ MUSIC ------- */
-body.theme-dark .music-track-container {
+html.theme-dark .music-track-container {
   background-color: #353535;
 }
 
@@ -387,7 +387,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
   color: #222;
   font-size: 24px;
 }
-body.theme-dark .footer-social-icon {
+html.theme-dark .footer-social-icon {
   color: #fff;
 }
 
@@ -455,10 +455,10 @@ body.theme-dark .footer-social-icon {
   gap: 12px;
 }
 
-body.theme-dark .skill-container {
+html.theme-dark .skill-container {
   border: 1px solid #F5516F;
 }
 
-body.theme-dark .skill-icon {
+html.theme-dark .skill-icon {
   background-color: #F5516F;
 }
