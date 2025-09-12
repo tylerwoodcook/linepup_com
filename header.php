@@ -15,11 +15,22 @@
   <!-- JavaScript -->
   <script src="/assets/scripts.js" defer></script>
   <script src="https://kit.fontawesome.com/9c9528a7c3.js" crossorigin="anonymous"></script>
+  <script>// Add light/dark theme to <html> element
+  (function() {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.documentElement.classList.add("theme-dark");
+    } else if (savedTheme === "light") {
+      document.documentElement.classList.add("theme-light");
+    }
+  })();
+</script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
 
-<body id="body" class="theme-light">
+<body id="body">
   <div class="page-content">
 
     <div class="section header-section">
