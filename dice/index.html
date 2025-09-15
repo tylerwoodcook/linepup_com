@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://kit.fontawesome.com/9c9528a7c3.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bokor&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/9c9528a7c3.js" crossorigin="anonymous"></script>
+
+	<title>Dice Roller</title>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: sans-serif;
+		}
+
+		h1 {
+			font-family: "Bokor", system-ui;
+			font-size: 64px;
+			line-height: 1.2;
+			margin: 0;
+		}
+
+		h2 {
+			font-family: "Bokor", system-ui;
+			font-size: 48px;
+			line-height: 1.2;
+			margin: 0;
+		}
+
+		.container-fluid {
+			width: 100%;
+			max-width: 700px;
+			padding: 24px;
+		}
+
+		.form-row {
+			display: grid;
+			grid-template-columns: 1fr 4fr 1fr 2fr 3fr;
+			gap: 8px;
+			margin: 0 0 16px 0;
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		@media (max-width: 600px) {
+			.form-row {
+				grid-template-columns: repeat(4, 1fr);
+			}
+
+			#button {
+				grid-column: span 4;
+			}
+		}
+
+		input,
+		select {
+			padding: 10px;
+			border-radius: 4px;
+			border: 1px solid #c0c0c0;
+			box-sizing: border-box;
+		}
+
+		select {
+			appearance: none;
+			/* Remove default styling */
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			cursor: pointer;
+		}
+
+		#selectModifier,
+		#modifier,
+		#numberDice,
+		#button,
+		#typeDie {
+			width: 100%;
+			font-size: 24px;
+			border-radius: 3px;
+			font-weight: bold;
+			border: none;
+			font-family: "arvo", serif;
+		}
+
+		#button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #F5516F;
+			font-family: "Bokor", system-ui;
+			font-size: 32px;
+			color: #fff;
+			font-weight: bold;
+			border: none;
+			padding: 10px;
+			cursor: pointer;
+			letter-spacing: 1px;
+		}
+
+		#button:hover i {
+			opacity: 100%;
+		}
+
+		#result-container {
+			width: 100%;
+			min-height: 104px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background: #f0f0f0;
+			margin: 0;
+			padding: 8px;
+			text-align: center;
+			border-radius: 3px;
+			box-sizing: border-box;
+			transition: background-color 0.5s ease;
+		}
+		#max-roll p {
+			font-family: "Bokor", system-ui;
+			font-size: 28px;
+			margin: 0;
+		}
+
+		.dice-roller-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			box-sizing: border-box;
+			background-color: #e0e0e0;
+			padding: 16px;
+		}
+
+		.link-to-linepup {
+			margin-top: 16px;
+			color: #888;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="dice-roller-container">
+		<div>
+			<h1>Let's <i class="fa-solid fa-dice-d20"></i> Roll</h1>
+		</div>
+		<div class="container-fluid">
+			<form>
+				<div class="form-row">
+					<input id="numberDice" type="number" value="1" onchange="getDieNumber()"></input>
+					<select id="typeDie" onchange="getDieType()">
+						<option value="4">d4</option>
+						<option value="6">d6</option>
+						<option value="8">d8</option>
+						<option value="10">d10</option>
+						<option value="12">d12</option>
+						<option value="20">d20</option>
+						<option value="100">d100</option>
+					</select>
+					<select id="selectModifier">
+						<option value="+">+</option>
+						<option value="-">-</option>
+					</select>
+					<input id="modifier" type="number" value="0"></input>
+					<button id="button" class="btn btn-lg btn-primary">Roll 'em <i class="fa-solid fa-dice button-icon"
+							style="margin-left: 8px; opacity: 0.6;"></i></button>
+				</div>
+			</form>
+			<div id="result-container">
+				<div id="max-roll"></div>
+				<h2 id="result"></h2>
+			</div>
+		</div>
+		<div>
+			<a href="/fun-stuff/">
+				<p class="link-to-linepup"><i style="font-size: 12px; margin-right: 5px;" class="fa-solid fa-arrow-left"
+						aria-hidden="true"></i>Back to linepup.com</p>
+			</a>
+		</div>
+	</div>
+
+
+	<script>
+		//gets sides from dropdown in ui
+		function getDieType() {
+			return parseInt(document.getElementById("typeDie").value);
+		}
+
+		//retrieves number of die to roll
+		function getDieNumber() {
+			return document.getElementById("numberDice").value;
+		}
+
+		//retrieves roll modifier
+		function getModifier() {
+			let num = document.getElementById("modifier").value;
+			if (document.getElementById("selectModifier").value == '-') {
+				return parseInt(-num);
+			} else {
+				return parseInt(num);
+			}
+		}
+
+		//determines number of sides
+		function Dice(sides) {
+			this.sides = sides;
+		}
+
+		//generates roll based on number of sides
+		Dice.prototype.roll = function () {
+			return Math.floor(Math.random() * this.sides) + 1;
+		}
+
+		//Set variables
+		const button = document.getElementById("button");
+		const resultContainer = document.getElementById("result-container");
+		const maxRollContainer = document.getElementById("max-roll");
+		const logResult = document.getElementById("result");
+
+
+		button.onclick = function (e) {
+			e.preventDefault();
+			var resultString = "";
+			var dieRoll = new Dice(getDieType());
+			var result = 0;
+			// var logResult = document.querySelector("#result");
+			for (let i = 0; i < getDieNumber(); i++) {
+				result += dieRoll.roll();
+			}
+			result += getModifier();
+
+
+			logResult.innerHTML = '<i class="fa-solid fa-dice-five"></i>';
+			setTimeout(function () {
+				logResult.innerHTML = '<i class="fa-solid fa-dice-one"></i>';
+			}, 100);
+			setTimeout(function () {
+				logResult.innerHTML = '<i class="fa-solid fa-dice-three"></i>';
+			}, 300);
+			setTimeout(function () {
+				logResult.innerHTML = '<i class="fa-solid fa-dice-six"></i>';
+			}, 500);
+			setTimeout(function () {
+				logResult.innerHTML = '<i class="fa-solid fa-dice-two"></i>';
+			}, 700);
+			setTimeout(function () {
+				logResult.innerHTML = '<i class="fa-solid fa-dice-four"></i>';
+			}, 900);
+			setTimeout(function () {
+
+				// IF critical roll
+				if (result == (getDieType() * getDieNumber()) + getModifier()) {
+					maxRollContainer.innerHTML = '<p style="font-size: 24px; line-height: 1;">MAX ROLL!</p>';
+					resultContainer.style.background = "linear-gradient(135deg, #ffd166, #ffd166, #fcbf49)"; // bright gold
+					logResult.innerHTML = '<i class="fa-solid fa-bolt" style="font-size: 36px; color: #fff; margin-right: 16px;"></i>' + result + '<i class="fa-solid fa-bolt" style="font-size: 36px; color: #fff; margin-left: 16px;"></i>';
+				} else {
+					maxRollContainer.innerHTML = '';
+					resultContainer.style.background = "#f0f0f0"; // light gray
+					logResult.innerHTML = result;
+				}
+				console.log(result);
+			}, 1100);
+		};
+
+	</script>
+</body>
+
+</html>
