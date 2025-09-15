@@ -9,8 +9,8 @@ include('../header.php');
     <hr>
 
     <div class="post-container">
-    <a href="../dice-roller/index.html">
-        <h2><i class="fa-solid fa-dice-d20"></i> Simple dice roller</h2>
+    <a href="../dice/index.html">
+        <h2><i class="fa-solid fa-dice-d20"></i> Dice Roller</h2>
     </a>
     <p>Super simple project with unlimited uses. Roll for damage, roll for initiative, or maybe even roll to see what movie you're going to watch tonight.
     </p>
