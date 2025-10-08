@@ -1,3 +1,17 @@
+:root {
+  /* VARIABLES */
+  --red-light-theme: #C14D63;
+  --red-dark-theme: #f5516f;
+
+  --gray-dark: #222222;
+  --gray-med: #353535;
+  --gray-light: #d0d0d0;
+  --gray-x-light: #f0f0f0;
+
+  --text-dark: #222222;
+  --text-light: #ffffff;
+}
+
 body {
   font-family: "IBM Plex Serif", serif;
   transition: all 0.2s;
@@ -6,11 +20,11 @@ body {
 
 .theme-light {
   background-color: #fff;
-  color: #222;
+  color: var(--gray-dark);
 }
 
 .theme-dark {
-  background-color: #222;
+  background-color: var(--gray-dark);
   color: #fff;
 }
 
@@ -79,7 +93,7 @@ ul {
 }
 
 a {
-  color: #c14d63;
+  color: var(--red-light-theme);
 }
 /* Remove underlines for Heading links */
 a:has(h1),
@@ -92,7 +106,7 @@ a:has(h6) {
 }
 
 html.theme-dark a {
-  color: #F5516F;
+  color: var(--red-dark-theme);
 }
 
 .text-large {
@@ -100,7 +114,6 @@ html.theme-dark a {
 }
 
 @media screen and (max-width: 600px) {
-
   h1,
   .h1 {
     font-size: 40px;
@@ -135,8 +148,22 @@ hr {
   border-collapse: collapse;
   border: none;
   height: 1px;
-  background-color: #d0d0d0;
+  background-color: var(--gray-light);
   margin: 40px 0;
+}
+
+.btn {
+  padding: 12px 20px;
+  background-color: var(--red-light-theme);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: bold;
+}
+html.theme-dark .btn {
+  background-color: var(--red-dark-theme);
 }
 
 /* ------- HEADER & PAGE CONTENT ------- */
@@ -150,7 +177,7 @@ div.page-content {
 
 div.section {
   width: 100%;
-  max-width: 850px;
+  max-width: 650px;
 }
 
 .header-section {
@@ -159,7 +186,7 @@ div.section {
   grid-template-columns: auto 1fr;
   gap: 24px;
   justify-content: space-between;
-  margin: 24px 0;
+  margin: 0 0 40px 0;
   padding: 0;
 }
 
@@ -169,7 +196,7 @@ div.section {
 }
 
 .header-logo img {
-  max-width: 100px;
+  max-width: 82px;
   transition: all 0.2s;
   position: relative;
   z-index: 9;
@@ -193,6 +220,19 @@ div.section {
   opacity: 1;
 }
 
+/* Site Logo on Mobile */
+@media (max-width: 600px) {
+  .header-logo img {
+    max-width: 50px;
+  }
+  .header-logo-thumb img {
+    display: none;
+  }
+  .header-title-container:hover .header-logo img {
+    transform: none;
+  }
+}
+
 .header-title {
   font-size: 48px;
   margin-bottom: 16px;
@@ -203,7 +243,6 @@ div.section {
   display: flex;
   flex-direction: row;
   gap: 8px;
-
 }
 
 #site-nav {
@@ -214,34 +253,45 @@ div.section {
   align-items: center;
   gap: 16px;
 }
-
+@media (max-width: 600px) {
+  #site-nav {
+    gap: 4px;
+  }
+  .header-theme-container {
+    gap: 4px;
+  }
+}
 
 .nav-item {
+  font-family: "Gabarito", sans-serif;
+  font-weight: 400;
   padding: 4px 12px;
-  border: 1px solid #d0d0d0;
-  color: #222222;
+  color: var(--gray-dark);
   border-radius: 2px;
   text-decoration: none;
   background-color: transparent;
   transition: all 0.2s;
   font-size: 16px;
 }
+@media (max-width: 450px) {
+  .nav-item {
+    font-size: 14px;
+  }
+}
 
 html.theme-dark .nav-item {
-  border-color: #444444;
   color: #ffffff;
 }
 
 .nav-item:hover {
-  background-color: #f0f0f0;
+  background-color: var(--gray-x-light);
   cursor: pointer;
 }
 
 html.theme-dark .nav-item:hover {
-  background-color: #444444;
-  color: #fff
+  background-color: var(--gray-med);
+  color: #fff;
 }
-
 
 .nav-item-theme-icon {
   padding: 8px;
@@ -251,35 +301,23 @@ html.theme-dark .nav-item:hover {
   width: 24px;
   height: 24px;
   border-radius: 50px;
-  border: 1px solid #d0d0d0;
   text-decoration: none;
   background-color: transparent;
   transition: all 0.2s;
 }
 
-html.theme-dark .nav-item-theme-icon {
-  border: 1px solid #444;
-}
-
 .nav-item-theme-icon:hover {
-  background-color: #f0f0f0;
-  ;
+  background-color: var(--gray-x-light);
   cursor: pointer;
 }
 
 html.theme-dark .nav-item-theme-icon:hover {
-  background-color: #444;
+  background-color: var(--gray-med);
 }
 
 @media screen and (max-width: 500px) {
   .header-section {
-    margin-bottom: 32px;
-    padding-bottom: 32px;
-    grid-template-columns: 1fr;
-  }
-
-  .header-logo {
-    max-width: 80px;
+    grid-template-columns: 1fr 6fr;
   }
 
   .header-title {
@@ -297,10 +335,10 @@ html.theme-dark .nav-item-theme-icon:hover {
 
 /* POST CONTAINER */
 html.theme-dark .post-container {
-  background-color: #353535;
+  background-color: var(--gray-med);
 }
 .post-container {
-  background-color: #f0f0f0;
+  background-color: var(--gray-x-light);
   padding: 40px;
   border-radius: 16px;
   margin-bottom: 40px;
@@ -312,8 +350,6 @@ html.theme-dark .post-container {
   }
 }
 
-
-
 /* ------ MUSIC ------- */
 .lyrics-section {
   font-family: "Gabarito", sans-serif;
@@ -323,7 +359,7 @@ html.theme-dark .post-container {
   display: flex;
   width: 50px;
   height: 50px;
-  background-color: #c14d63;
+  background-color: var(--red-light-theme);
   border-radius: 32px;
   align-items: center;
   justify-content: center;
@@ -337,7 +373,7 @@ a:has(.download-audio) {
 
 /* Audio Player HTML */
 audio::-webkit-media-controls-panel {
-  background-color: #c14d63;
+  background-color: var(--red-light-theme);
 }
 html.theme-dark audio::-webkit-media-controls-panel {
   background-color: var(--red-dark-theme);
@@ -373,20 +409,18 @@ audio::-webkit-media-controls-rewind-button
 audio::-webkit-media-controls-return-to-realtime-button
 audio::-webkit-media-controls-toggle-closed-captions-button */
 
-
-
 /* ------- FOOTER ------- */
 #global-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 1px solid #d0d0d0;
+  border-top: 1px solid var(--gray-light);
   padding-top: 24px;
   margin-top: 24px;
   gap: 24px;
 }
 .footer-social-icon {
-  color: #222;
+  color: var(--gray-dark);
   font-size: 24px;
 }
 html.theme-dark .footer-social-icon {
@@ -429,12 +463,12 @@ html.theme-dark .footer-social-icon {
 .skill-container {
   display: flex;
   align-items: center;
-  border: 1px solid #c14d63;
+  border: 1px solid var(--red-light-theme);
   border-radius: 6px;
 }
 
 .skill-icon {
-  background-color: #c14d63;
+  background-color: var(--red-light-theme);
   font-size: 19px;
   color: #fff;
   display: flex;
@@ -458,9 +492,9 @@ html.theme-dark .footer-social-icon {
 }
 
 html.theme-dark .skill-container {
-  border: 1px solid #F5516F;
+  border: 1px solid var(--red-dark-theme);
 }
 
 html.theme-dark .skill-icon {
-  background-color: #F5516F;
+  background-color: var(--red-dark-theme);
 }
