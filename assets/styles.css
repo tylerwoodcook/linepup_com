@@ -328,6 +328,9 @@ html.theme-dark .post-container {
   align-items: center;
   justify-content: center;
 }
+html.theme-dark .download-audio {
+  background-color: var(--red-dark-theme);
+}
 a:has(.download-audio) {
   text-decoration: none;
 }
@@ -335,6 +338,9 @@ a:has(.download-audio) {
 /* Audio Player HTML */
 audio::-webkit-media-controls-panel {
   background-color: #c14d63;
+}
+html.theme-dark audio::-webkit-media-controls-panel {
+  background-color: var(--red-dark-theme);
 }
 
 audio::-webkit-media-controls-play-button {
