@@ -43,9 +43,9 @@
           </a>
       </div><!-- END header-title-container -->
       <div id="site-nav"">
-        <div><a class="nav-item" href="/fun-stuff">Fun Stuff</a></div>
+        <div><a class="nav-item" href="/">Home</a></div>
+        <div><a class="nav-item" href="/web">Web</a></div>
         <div><a class="nav-item" href="/music">Music</a></div>
-        <div><a class="nav-item" href="https://creativemarket.com/LinepupDesignCo" target="_blank">Store</a></div>
         <div class="header-theme-container">
           <div>
             <a class="nav-item-theme-icon" onclick="lightTheme();" id="light-theme">&#9728;&#65039;</a>

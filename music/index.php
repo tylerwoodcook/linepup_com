@@ -4,7 +4,7 @@ include('../header.php');
 ?>
 
 <div class="section">
-    <h1>Music</h1>
+    <h1 style="text-align: center;">Music</h1>
     <p>This is my place to share the musical projects I’ve worked on or am still working on.
         Some tracks are in progress, and a few may never be “finished”, and that’s fine with me.
         As much as I love performing and sharing music, I’ve always enjoyed the process of writing and recording the most.
