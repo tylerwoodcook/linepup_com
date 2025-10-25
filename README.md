@@ -14,3 +14,7 @@ Hostinger has a feature that allows me to deploy this repo directly to the linep
 
 1. `cd` into project folder and run `php -S localhost:8000`
 2. Navigate to `localhost:8000/default.php`
+
+## Roadmap
+
+- Add Graceful Grizzly website to "web" page
