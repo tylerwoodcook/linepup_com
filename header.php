@@ -3,7 +3,11 @@
 
 <head>
   <title><?php echo $pageTitle ?></title>
-  <link rel="icon" type="image/x-icon" href="lp-logo-sticker.png" />
+  <?php
+    $root = $_SERVER['DOCUMENT_ROOT'];
+    $faviconPath = $root . '/lp-logo-sticker.png';
+  ?>
+  <link rel="icon" type="image/x-icon" href="<?php $faviconPath ?>" />
   <meta charset="utf-8" />
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
   <meta content="Linepup Design and Development" name="This is the homepage for Linepup" />
