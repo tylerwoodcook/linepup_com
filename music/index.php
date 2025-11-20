@@ -205,7 +205,7 @@ include('../header.php');
             Impatient, complacent. Want Heaven, but I’m Hell bent.<br>
             Contracted a sickness. A feeling that I can’t kick this.<br>
             There’s a conflict within me. What I planned against what I’m doing.<br>
-            Do you see the good within me?
+            So show me the good within me.
         </p>
 
         <p><strong class="lyrics-section">BRIDGE 1</strong><br>
