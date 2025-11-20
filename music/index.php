@@ -5,29 +5,13 @@ include('../header.php');
 
 <div class="section">
     <h1 style="text-align: center;">Music</h1>
-    <p>This is my place to share the musical projects I’ve worked on or am still working on.
-        Some tracks are in progress, and a few may never be “finished”, and that’s fine with me.
-        As much as I love performing and sharing music, I’ve always enjoyed the process of writing and recording the most.
-        For me, when it comes to music, the journey is more important than the destination.
-    </p>
-    <p>Music has always been a big part of my life, and in many ways, it’s in my blood.
-        Growing up, my dad and his family traveled across the United States playing and singing gospel music.
-        Although my musical style is quite different, I’ve always felt they laid the groundwork for my musical journey, which I’m sharing here with you.
-    </p>
-    <p class="mb-40">
-        That’s why I’m taking a different approach: putting works-in-progress out there.
-        They may be incomplete or imperfect, but I hope you’ll still find them enjoyable to listen to.
-    </p>
+    <p>Here I’m sharing some of my musical projects. Some I consider done; others may still be works in progress. I hope you enjoy!</p>
 
     <!-- FOREST STRINGS -->
     <div class="post-container">
         <h2>Forest Strings</h2>
 
-        <p style="margin-bottom: 40px;">
-            Forest Strings is a simple love song, which borders on naive.
-            It taps into a childlike, reckless faith that love can last forever.
-            Call it foolish, call it bold.
-        </p>
+        <p style="margin-bottom: 40px;">Forest Strings is a simple love song, which borders on naive. It taps into a childlike faith that believes love can last forever. Call it foolish, call it bold.</p>
 
         <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 24px; align-items: center; margin-bottom: 40px;">
             <div>
@@ -78,12 +62,7 @@ include('../header.php');
     <div class="post-container">
         <h2>Far from the Tree</h2>
 
-        <p style="margin-bottom: 40px;">
-            I always imagined <i>Far From the Tree</i> as the first song on an album.
-            It portrays a sense of regret for not living up to my own expectations.
-            This track leans heavily on autumnal themes, referencing the "ill-fated trees" and their bruised and damaged fruits.
-            Growing up in Upstate New York, Autumn is incredibly sentimental to me, and I was always fascinated with the juxtaposition of the most beautiful time of year, which gives way to a long, frigid season of death.
-        </p>
+        <p style="margin-bottom: 40px;">This track leans heavily on autumnal themes. Growing up in Upstate New York, autumn has always been sentimental to me, and I’ve always been fascinated by the juxtaposition of the most beautiful season giving way to a long, frigid winter.</p>
 
         <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 24px; align-items: center; margin-bottom: 40px;">
             <div>
@@ -123,12 +102,7 @@ include('../header.php');
         <h2>Faults</h2>
 
         <p>
-            I first recorded <i>Faults</i> back in 2021 after spending a long time away from recording and writing music.
-            I remember feeling refreshed coming back to recording after so much time.
-            I also remember getting in trouble for trying to record vocals while my wife was alseep in the next room over.
-            That might seem like a frivolous detail, but it's actually quite relevant to the theme of this song.
-            This was my first time recording music as a married man; a <i>noisy</i> married man in a tiny apartment.
-            The lyrics of the song reflect the transition from a young man to a dedicated husband, and the challenges that come with growing up.
+            I first recorded Faults in 2021 after spending a long time away from recording and writing music. I remember getting in trouble for trying to record vocals while my wife was asleep in the next room over (my bad). For me, this song is about the challenges of growing up and embracing new responsibilities. 
         </p>
         <p style="margin-bottom: 40px;">
             Musically, this song channels some very nostalgic artists from my past, including The Beach Boys, Relient K, Weezer, and The Strokes.
@@ -192,15 +166,9 @@ include('../header.php');
     <div class="post-container">
         <h2>Wretched</h2>
 
-        <p style="margin-bottom: 40px;">
-            Thematically, <i>Wretched</i> is a song about being a wretched, black-hearted sinner.
-            Many of the themes are inspired by Romans chapter 7, in which the author Paul is admitting that he can't do the "good" he wants to do.
-            "For I do not understand my own actions. For I do not do what I want, but I do the very thing I hate." (Romans 7:15)
-        </p>
+        <p style="margin-bottom: 40px;">Conceptually, Wretched is a song about coming to terms with my inherent imperfections. It’s inspired by Romans chapter 7, in which the author, Paul, admits that he can't do the “good” he wants to do: “For I do not understand my own actions. For I do not do what I want, but I do the very thing I hate.”</p>
 
-        <p style="margin-bottom: 40px;">
-            Musically, this song draws inspiration from some of my most formative musical influences, such as Blink 182, Alkaline Trio, and other punk/pop-punk bands of that era. 
-        </p>
+        <p style="margin-bottom: 40px;">Musically, the song draws inspiration from some of my most formative influences, such as Blink 182, Alkaline Trio, and other punk/pop-punk bands of that era.</p>
 
         <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 24px; align-items: center; margin-bottom: 40px;">
             <div>
@@ -237,7 +205,7 @@ include('../header.php');
             Impatient, complacent. Want Heaven, but I’m Hell bent.<br>
             Contracted a sickness. A feeling that I can’t kick this.<br>
             There’s a conflict within me. What I planned against what I’m doing.<br>
-            Do you see the good within me?
+            So show me the good within me.
         </p>
 
         <p><strong class="lyrics-section">BRIDGE 1</strong><br>
