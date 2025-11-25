@@ -18,3 +18,5 @@ Hostinger has a feature that allows me to deploy this repo directly to the linep
 ## Roadmap
 
 - Add Graceful Grizzly website to "web" page
+- Add link to chat.linepup.com to "web" page (explain how it works with locally installed Ollama)
+  - Update chat.linepup to latest version of ollemur?
