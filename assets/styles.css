@@ -1,15 +1,21 @@
 :root {
   /* VARIABLES */
-  --red-light-theme: #C14D63;
-  --red-dark-theme: #f5516f;
+  --brand-red: #f5516f;
 
   --gray-dark: #222222;
   --gray-med: #353535;
   --gray-light: #d0d0d0;
   --gray-x-light: #f0f0f0;
+  --white: #ffffff;
 
-  --text-dark: #222222;
-  --text-light: #ffffff;
+  /* Dynamic variables - change with theme switch */
+  --text-color: var(--gray-dark);
+  
+  --ui-color-1: var(--white);
+  --ui-color-2: var(--gray-x-light);
+  --ui-color-3: var(--gray-light);
+  --ui-color-4: var(--gray-med);
+  --ui-color-5: var(--gray-dark);
 }
 
 body {
@@ -19,13 +25,25 @@ body {
 }
 
 .theme-light {
+  --text-color: var(--gray-dark);
+  --ui-color-1: var(--white);
+  --ui-color-2: var(--gray-x-light);
+  --ui-color-3: var(--gray-light);
+  --ui-color-4: var(--gray-med);
+  --ui-color-5: var(--gray-dark);
   background-color: #fff;
-  color: var(--gray-dark);
+  color: var(--text-color);
 }
 
 .theme-dark {
+  --text-color: var(--white);
+  --ui-color-1: var(--gray-dark);
+  --ui-color-2: var(--gray-med);
+  --ui-color-3: var(--gray-light);
+  --ui-color-4: var(--gray-x-light);
+  --ui-color-5: var(--white);
   background-color: var(--gray-dark);
-  color: #fff;
+  color: var(--text-color);
 }
 
 /* ------- TYPOGRAPHY ------- */
@@ -93,7 +111,7 @@ ul {
 }
 
 a {
-  color: var(--red-light-theme);
+  color: var(--brand-red);
 }
 /* Remove underlines for Heading links */
 a:has(h1),
@@ -103,10 +121,6 @@ a:has(h4),
 a:has(h5),
 a:has(h6) {
   text-decoration: none;
-}
-
-html.theme-dark a {
-  color: var(--red-dark-theme);
 }
 
 .text-large {
@@ -148,22 +162,19 @@ hr {
   border-collapse: collapse;
   border: none;
   height: 1px;
-  background-color: var(--gray-light);
+  background-color: var(--ui-color-3);
   margin: 40px 0;
 }
 
 .btn {
   padding: 12px 20px;
-  background-color: var(--red-light-theme);
+  background-color: var(--brand-red);
   color: #fff;
   cursor: pointer;
   border: none;
   border-radius: 3px;
   font-size: 16px;
   font-weight: bold;
-}
-html.theme-dark .btn {
-  background-color: var(--red-dark-theme);
 }
 
 /* ------- HEADER & PAGE CONTENT ------- */
@@ -266,7 +277,7 @@ div.section {
   font-family: "Gabarito", sans-serif;
   font-weight: 400;
   padding: 4px 12px;
-  color: var(--gray-dark);
+  color: var(--text-color);
   border-radius: 2px;
   text-decoration: none;
   background-color: transparent;
@@ -279,21 +290,13 @@ div.section {
   }
 }
 
-html.theme-dark .nav-item {
-  color: #ffffff;
-}
-
 .nav-item:hover {
-  background-color: var(--gray-x-light);
+  background-color: var(--ui-color-2);
   cursor: pointer;
 }
 
-html.theme-dark .nav-item:hover {
-  background-color: var(--gray-med);
-  color: #fff;
-}
-
 .nav-item-theme-icon {
+  color: var(--text-color);
   padding: 8px;
   display: flex;
   align-items: center;
@@ -307,12 +310,8 @@ html.theme-dark .nav-item:hover {
 }
 
 .nav-item-theme-icon:hover {
-  background-color: var(--gray-x-light);
+  background-color: var(--ui-color-2);
   cursor: pointer;
-}
-
-html.theme-dark .nav-item-theme-icon:hover {
-  background-color: var(--gray-med);
 }
 
 @media screen and (max-width: 500px) {
@@ -334,11 +333,8 @@ html.theme-dark .nav-item-theme-icon:hover {
 }
 
 /* POST CONTAINER */
-html.theme-dark .post-container {
-  background-color: var(--gray-med);
-}
 .post-container {
-  background-color: var(--gray-x-light);
+  background-color: var(--ui-color-2);
   padding: 40px;
   border-radius: 16px;
   margin-bottom: 40px;
@@ -351,21 +347,14 @@ html.theme-dark .post-container {
 }
 
 /* ------ MUSIC ------- */
-.lyrics-section {
-  font-family: "Gabarito", sans-serif;
-  font-weight: 700;
-}
 .download-audio {
   display: flex;
   width: 50px;
   height: 50px;
-  background-color: var(--red-light-theme);
+  background-color: var(--brand-red);
   border-radius: 32px;
   align-items: center;
   justify-content: center;
-}
-html.theme-dark .download-audio {
-  background-color: var(--red-dark-theme);
 }
 a:has(.download-audio) {
   text-decoration: none;
@@ -373,10 +362,7 @@ a:has(.download-audio) {
 
 /* Audio Player HTML */
 audio::-webkit-media-controls-panel {
-  background-color: var(--red-light-theme);
-}
-html.theme-dark audio::-webkit-media-controls-panel {
-  background-color: var(--red-dark-theme);
+  background-color: var(--brand-red);
 }
 
 audio::-webkit-media-controls-play-button {
@@ -414,17 +400,14 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 1px solid var(--gray-light);
+  border-top: 1px solid var(--ui-color-3);
   padding-top: 24px;
   margin-top: 24px;
   gap: 24px;
 }
 .footer-social-icon {
-  color: var(--gray-dark);
+  color: var(--text-color);
   font-size: 24px;
-}
-html.theme-dark .footer-social-icon {
-  color: #fff;
 }
 
 /* ------- UTILITY ------- */
@@ -463,12 +446,12 @@ html.theme-dark .footer-social-icon {
 .skill-container {
   display: flex;
   align-items: center;
-  border: 1px solid var(--red-light-theme);
+  border: 1px solid var(--brand-red);
   border-radius: 6px;
 }
 
 .skill-icon {
-  background-color: var(--red-light-theme);
+  background-color: var(--brand-red);
   font-size: 19px;
   color: #fff;
   display: flex;
@@ -489,12 +472,4 @@ html.theme-dark .footer-social-icon {
   width: 100%;
   grid-template-columns: repeat(1, 1fr);
   gap: 12px;
-}
-
-html.theme-dark .skill-container {
-  border: 1px solid var(--red-dark-theme);
-}
-
-html.theme-dark .skill-icon {
-  background-color: var(--red-dark-theme);
 }
