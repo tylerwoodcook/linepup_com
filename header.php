@@ -48,10 +48,10 @@
         <div><a class="nav-item" href="/music">Music</a></div>
         <div class="header-theme-container">
           <div>
-            <a class="nav-item-theme-icon" onclick="lightTheme();" id="light-theme">&#9728;&#65039;</a>
+            <a class="nav-item-theme-icon" onclick="lightTheme();" id="light-theme"><i class="fa-solid fa-sun"></i></a>
           </div>
           <div>
-            <a class="nav-item-theme-icon" onclick="darkTheme();" id="dark-theme">&#127761;</a>
+            <a class="nav-item-theme-icon" onclick="darkTheme();" id="dark-theme"><i class="fa-solid fa-moon"></i></a>
           </div>
         </div>
 

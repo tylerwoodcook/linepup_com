@@ -4,9 +4,18 @@ include('../header.php');
 ?>
 
 <div class="section">
-    <h1 style="text-align: center;">Web Projects</h1>
-    <p class="mb-40">Here's a collection of some fun/simple/useful projects that I've made.</p>
+    <h1>Web Projects</h1>
+    <p class="mb-40">Here's a collection of some web projects that I've made.</p>
 
+    <div class="post-container">
+        <h2><i class="fa-solid fa-microphone"></i> Graceful Grizzly Podcast</h2>
+        <p>The website for the Graceful Grizzly Podcast. Built with WordPress.
+        </p>
+        <a href="https://www.gracefulgrizzly.com/" target="_blank">
+            <button class="btn">Check it out!</button>
+        </a>
+    </div>
+    
     <div class="post-container">
         <h2><i class="fa-solid fa-brush"></i> Color Amp</h2>
         <p>A color tool to quickly find and save colors using hue, saturation and brightness knobs. Build a color palette in minutes—nay, seconds! More features coming soon.
