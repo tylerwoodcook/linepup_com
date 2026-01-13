@@ -36,10 +36,10 @@
     <div class="section header-section">
       <div class="header-title-container">
           <a class="header-logo" href="/">
-            <img src="linepup-logo-squiggle.svg" style="width: 64px;">
+            <img src="/linepup-logo-squiggle.svg" style="width: 64px;">
           </a>
           <a class="header-logo-bark" href="/">
-            <img src="bark.svg">
+            <img src="/bark.svg">
           </a>
       </div><!-- END header-title-container -->
       <div id="site-nav"">
