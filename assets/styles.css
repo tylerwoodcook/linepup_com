@@ -10,7 +10,8 @@
 
   /* Dynamic variables - change with theme switch */
   --text-color: var(--gray-dark);
-  
+  --squiggle-color: var(--gray-x-light);
+
   --ui-color-1: var(--white);
   --ui-color-2: var(--gray-x-light);
   --ui-color-3: var(--gray-light);
@@ -26,6 +27,8 @@ body {
 
 .theme-light {
   --text-color: var(--gray-dark);
+  /* text color changes here */
+  --squiggle-color: var(--gray-x-light);
   --ui-color-1: var(--white);
   --ui-color-2: var(--gray-x-light);
   --ui-color-3: var(--gray-light);
@@ -37,6 +40,8 @@ body {
 
 .theme-dark {
   --text-color: var(--white);
+  /* text color changes here */
+  --squiggle-color: var(--gray-med);
   --ui-color-1: var(--gray-dark);
   --ui-color-2: var(--gray-med);
   --ui-color-3: var(--gray-light);
@@ -113,6 +118,7 @@ ul {
 a {
   color: var(--brand-red);
 }
+
 /* Remove underlines for Heading links */
 a:has(h1),
 a:has(h2),
@@ -128,6 +134,7 @@ a:has(h6) {
 }
 
 @media screen and (max-width: 600px) {
+
   h1,
   .h1 {
     font-size: 40px;
@@ -182,13 +189,19 @@ hr {
 div.page-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   align-items: center;
-  padding: 40px 16px;
+  padding: 0 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
 }
 
 div.section {
   width: 100%;
   max-width: 650px;
+  z-index: 99999;
 }
 
 .header-section {
@@ -197,7 +210,7 @@ div.section {
   grid-template-columns: auto 1fr;
   gap: 24px;
   justify-content: space-between;
-  margin: 0 0 40px 0;
+  margin: 24px 0 40px 0;
   padding: 0;
 }
 
@@ -208,13 +221,14 @@ div.section {
 
 .header-logo img {
   max-width: 82px;
+  width: 100%;
   transition: all 0.2s;
   position: relative;
   z-index: 9;
 }
 
-.header-logo-thumb img {
-  height: 70px;
+.header-logo-bark img {
+  height: 60px;
   transform: translateX(-60px) scale(80%);
   transition: all 0.2s;
   position: relative;
@@ -223,11 +237,11 @@ div.section {
 }
 
 .header-title-container:hover .header-logo img {
-  transform: scale(110%) rotate(-5deg);
+  transform: scale(100%) rotate(-8deg);
 }
 
-.header-title-container:hover .header-logo-thumb img {
-  transform: translateX(-20px) scale(100%);
+.header-title-container:hover .header-logo-bark img {
+  transform: scale(100%);
   opacity: 1;
 }
 
@@ -236,9 +250,11 @@ div.section {
   .header-logo img {
     max-width: 50px;
   }
-  .header-logo-thumb img {
+
+  .header-logo-bark img {
     display: none;
   }
+
   .header-title-container:hover .header-logo img {
     transform: none;
   }
@@ -264,10 +280,12 @@ div.section {
   align-items: center;
   gap: 16px;
 }
+
 @media (max-width: 600px) {
   #site-nav {
     gap: 4px;
   }
+
   .header-theme-container {
     gap: 4px;
   }
@@ -278,12 +296,12 @@ div.section {
   font-weight: 400;
   padding: 4px 12px;
   color: var(--text-color);
-  border-radius: 2px;
+  border-radius: 4px;
   text-decoration: none;
   background-color: transparent;
-  transition: all 0.2s;
   font-size: 16px;
 }
+
 @media (max-width: 450px) {
   .nav-item {
     font-size: 14px;
@@ -291,7 +309,8 @@ div.section {
 }
 
 .nav-item:hover {
-  background-color: var(--ui-color-2);
+  background-color: var(--text-color);
+  color: var(--brand-red);
   cursor: pointer;
 }
 
@@ -306,11 +325,11 @@ div.section {
   border-radius: 50px;
   text-decoration: none;
   background-color: transparent;
-  transition: all 0.2s;
 }
 
 .nav-item-theme-icon:hover {
-  background-color: var(--ui-color-2);
+  background-color: var(--text-color);
+  color: var(--brand-red);
   cursor: pointer;
 }
 
@@ -356,6 +375,7 @@ div.section {
   align-items: center;
   justify-content: center;
 }
+
 a:has(.download-audio) {
   text-decoration: none;
 }
@@ -405,6 +425,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
   margin-top: 24px;
   gap: 24px;
 }
+
 .footer-social-icon {
   color: var(--text-color);
   font-size: 24px;
@@ -472,4 +493,81 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
   width: 100%;
   grid-template-columns: repeat(1, 1fr);
   gap: 12px;
+}
+
+/* ------- SVGs ------- */
+svg.squiggle-background {
+  z-index: 1;
+  opacity: 0.4;
+}
+
+svg.squiggle-background path {
+  stroke: var(--squiggle-color);
+}
+
+/* ------- HOME PAGE ------- */
+#home-page-content {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#home-page-content h1 {
+  margin-bottom: 0;
+}
+
+#home-page-content svg#squiggle-underline {
+  max-width: 100%;
+  height: 56px;
+  width: 100%;
+  margin: 24px 0;
+  opacity: 0.9;
+}
+#home-page-content svg#squiggle-underline path {
+  stroke: var(--text-color);
+}
+
+.home-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.home-background svg#squiggle-01 {
+  position: absolute;
+  top: 35%;
+  transform: rotate(10deg);
+  overflow: visible;
+  margin: 0 -10%;
+}
+.home-background svg#squiggle-02 {
+  position: absolute;
+  top: 10%;
+  right: 20px;
+  width: 100%;
+  max-width: 500px;
+  transform: rotate(10deg);
+  overflow: visible;
+  margin-right: -5%;
+}
+.home-background svg#squiggle-01 path {
+  stroke-width: 20px;
+}
+.home-background svg#squiggle-02 path {
+  stroke-width: 45px;
+}
+
+@media screen and (max-width: 600px) {
+  .home-background svg#squiggle-01 {
+    margin: 0 -70%;
+  }
+  .home-background svg#squiggle-02 {
+    margin-right: -20%;
+    top: 12%;
+  }
 }
