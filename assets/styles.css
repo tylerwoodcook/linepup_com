@@ -11,7 +11,7 @@
   /* Dynamic variables - change with theme switch */
   --text-color: var(--gray-dark);
   --squiggle-color: var(--gray-x-light);
-  --post-container-shadow: 0 0 24px 0 rgba(00,00,00,0.2);
+  --post-container-shadow: 0 0 24px 0 rgba(00, 00, 00, 0.2);
 
   --ui-color-1: var(--white);
   --ui-color-2: var(--gray-x-light);
@@ -32,7 +32,7 @@ body {
   /* dynamic variables */
   --text-color: var(--gray-dark);
   --squiggle-color: var(--gray-x-light);
-  --post-container-shadow: 0 0 24px 0 rgba(00,00,00,0.2);
+  --post-container-shadow: 0 0 24px 0 rgba(00, 00, 00, 0.2);
 
   --ui-color-1: var(--white);
   --ui-color-2: var(--gray-x-light);
@@ -47,7 +47,7 @@ body {
   /* dynamic variables */
   --text-color: var(--white);
   --squiggle-color: var(--gray-med);
-  --post-container-shadow: 0 0 34px 0 rgba(00,00,00,0.1);
+  --post-container-shadow: 0 0 34px 0 rgba(00, 00, 00, 0.1);
 
   --ui-color-1: var(--gray-dark);
   --ui-color-2: var(--gray-med);
@@ -138,8 +138,8 @@ a:has(h6) {
   text-decoration: none;
 }
 
-.text-large {
-  font-size: 19px;
+.text-small {
+  font-size: 14px;
 }
 
 @media screen and (max-width: 600px) {
@@ -184,13 +184,27 @@ hr {
 
 .btn {
   padding: 12px 20px;
+  font-family: 'Google Sans', sans-serif;
   background-color: var(--brand-red);
   color: #fff;
   cursor: pointer;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
+  transition: all 0.1s;
+}
+
+@media screen and (min-width: 768px) {
+  .theme-light .btn:hover {
+    transform: rotate(-2deg);
+    box-shadow: 2px 2px 7px 0 rgba(00, 00, 00, 0.3);
+  }
+
+  .theme-dark .btn:hover {
+    transform: rotate(-2deg);
+    box-shadow: 3px 3px 9px 0 rgba(00, 00, 00, 0.7);
+  }
 }
 
 /* ------- HEADER & PAGE CONTENT ------- */
@@ -391,6 +405,7 @@ div.section {
   color: var(--text-color);
   font-size: 24px;
 }
+
 .footer-social-icon:hover {
   color: var(--brand-red);
 }
@@ -490,6 +505,7 @@ svg.squiggle-background path {
   margin: 24px 0;
   opacity: 0.9;
 }
+
 #home-page-content svg#squiggle-underline path {
   stroke: var(--text-color);
 }
@@ -509,6 +525,7 @@ svg.squiggle-background path {
   overflow: visible;
   margin: 0 -10%;
 }
+
 .home-background svg#squiggle-02 {
   position: absolute;
   top: 10%;
@@ -519,9 +536,11 @@ svg.squiggle-background path {
   overflow: visible;
   margin-right: -5%;
 }
+
 .home-background svg#squiggle-01 path {
   stroke-width: 20px;
 }
+
 .home-background svg#squiggle-02 path {
   stroke-width: 45px;
 }
@@ -530,6 +549,7 @@ svg.squiggle-background path {
   .home-background svg#squiggle-01 {
     margin: 0 -70%;
   }
+
   .home-background svg#squiggle-02 {
     margin-right: -20%;
     top: 12%;
@@ -553,6 +573,7 @@ svg.squiggle-background path {
   overflow: visible;
   margin: 0 -10%;
 }
+
 .music-background svg#squiggle-02 {
   position: absolute;
   top: 20%;
@@ -560,17 +581,21 @@ svg.squiggle-background path {
   overflow: visible;
   margin: 0 -10%;
 }
+
 @media screen and (min-width: 1921px) {
   .music-background svg#squiggle-01 {
     top: 45%;
   }
+
   .music-background svg#squiggle-02 {
     display: none;
   }
 }
+
 .music-background svg#squiggle-01 path {
   stroke-width: 20px;
 }
+
 .music-background svg#squiggle-02 path {
   stroke-width: 30px;
 }
@@ -579,6 +604,7 @@ svg.squiggle-background path {
   .music-background svg#squiggle-01 {
     margin: 0 -70%;
   }
+
   .music-background svg#squiggle-02 {
     margin-right: -20%;
     top: 12%;
@@ -592,6 +618,7 @@ svg#squiggle-underline {
   margin: 24px 0;
   opacity: 0.9;
 }
+
 svg#squiggle-underline path {
   stroke: var(--text-color);
 }
@@ -663,6 +690,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button
   overflow: visible;
   margin: 0 -10%;
 }
+
 .projects-background svg#squiggle-02 {
   position: absolute;
   top: 20%;
@@ -670,17 +698,21 @@ audio::-webkit-media-controls-toggle-closed-captions-button
   overflow: visible;
   margin: 0 -10%;
 }
+
 @media screen and (min-width: 1921px) {
   .projects-background svg#squiggle-01 {
     top: 45%;
   }
+
   .projects-background svg#squiggle-02 {
     display: none;
   }
 }
+
 .projects-background svg#squiggle-01 path {
   stroke-width: 20px;
 }
+
 .projects-background svg#squiggle-02 path {
   stroke-width: 30px;
 }
@@ -689,6 +721,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button
   .projects-background svg#squiggle-01 {
     margin: 0 -70%;
   }
+
   .projects-background svg#squiggle-02 {
     margin-right: -20%;
     top: 12%;
@@ -702,6 +735,7 @@ svg#squiggle-underline {
   margin: 24px 0;
   opacity: 0.9;
 }
+
 svg#squiggle-underline path {
   stroke: var(--text-color);
 }

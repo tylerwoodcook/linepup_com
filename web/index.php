@@ -50,7 +50,7 @@ include('../header.php');
         <h2><i class="fa-solid fa-dice-d20"></i> Dice Roller</h2>
         <p>Super simple project with unlimited uses. Roll for damage, roll for initiative, or maybe even roll to see what movie you're going to watch tonight.
         </p>
-        <p style="font-style: italic;">Featured on <a href="https://fmhy.net/gaming-tools#tabletop-tools" target="_blank">Free Media Heck Yeah!</a></p>
+        <p class="text-small" style="font-style: italic;">Featured on <a href="https://fmhy.net/gaming-tools#tabletop-tools" target="_blank">Free Media Heck Yeah!</a></p>
         <a href="../dice/index.html">
             <button class="btn">Check it out!</button>
         </a>
@@ -63,7 +63,7 @@ include('../header.php');
             This page has become a simple but powerful tool for me—helping me stay organized and quickly reference rules during play.
             It’s designed with D&D 5E in mind, along with a sprinkle of homebrew ideas I like to use at my table.
         </p>
-        <p style="font-style: italic;">Featured on <a href="https://fmhy.net/educational#dungeons-dragons" target="_blank">Free Media Heck Yeah!</a></p>
+        <p class="text-small" style="font-style: italic;">Featured on <a href="https://fmhy.net/educational#dungeons-dragons" target="_blank">Free Media Heck Yeah!</a></p>
         <a href="../dm-screen/index.html">
             <button class="btn">Check it out!</button>
         </a>
