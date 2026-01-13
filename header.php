@@ -3,7 +3,7 @@
 
 <head>
   <title><?php echo $pageTitle ?></title>
-  <link rel="icon" type="image/x-icon" href="/lp-logo-sticker.png" />
+  <link rel="icon" type="image/x-icon" href="/linepup-logo-squiggle.svg" />
   <meta charset="utf-8" />
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
   <meta content="Linepup Design and Development" name="This is the homepage for Linepup" />
@@ -11,7 +11,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
   <!-- JavaScript -->
   <script src="/assets/scripts.js" defer></script>
   <script src="https://kit.fontawesome.com/9c9528a7c3.js" crossorigin="anonymous"></script>
@@ -36,10 +36,10 @@
     <div class="section header-section">
       <div class="header-title-container">
           <a class="header-logo" href="/">
-            <img src="/linepup-logo-500px.png">
+            <img src="linepup-logo-squiggle.svg" style="width: 64px;">
           </a>
-          <a class="header-logo-thumb" href="/">
-            <img src="/linepup-thumbs-up.png">
+          <a class="header-logo-bark" href="/">
+            <img src="bark.svg">
           </a>
       </div><!-- END header-title-container -->
       <div id="site-nav"">
