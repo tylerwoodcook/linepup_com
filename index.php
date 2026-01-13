@@ -29,6 +29,7 @@ include('header.php');
         <path d="M.11,124.2c104.8-1.24,195.87-68.97,295.91-100.2,10.85-3.39,22.43-6.37,33.46-3.63s20.98,13.12,19.27,24.36c-1.53,10.04-11.05,16.59-19.74,21.85-25.51,15.44-51.3,30.42-77.34,44.94,89.1-30.46,181.21-61.33,275.11-54.39,8.42.62,18.87,3.35,20.29,11.68.78,4.61-1.75,9.07-4.19,13.06-4.98,8.15-9.95,16.29-14.93,24.44-3.08,5.05-6.28,11.01-4.28,16.58,2.82,7.86,13.42,8.95,21.7,7.93,22.3-2.76,43.57-10.79,64.52-18.9,83.49-32.31,166.09-66.89,247.69-103.71" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="18" />
       </g>
     </svg>
+    
     <p>My name's Tyler. Welcome! I'm a web developer from the East Coast of USA with over five years of professional experience. I love creating aesthetic and efficient UI/UX for websites and applications. I thrive on creativity and I love to learn new things.</p>
     <p>When I’m not working, I like to stay busy playing with my two french bulldogs (Leia and Keira), playing hockey, recording music, or doing other creative things.</p>
   </div>

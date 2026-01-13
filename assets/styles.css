@@ -11,6 +11,7 @@
   /* Dynamic variables - change with theme switch */
   --text-color: var(--gray-dark);
   --squiggle-color: var(--gray-x-light);
+  --post-container-shadow: 0 0 24px 0 rgba(00,00,00,0.2);
 
   --ui-color-1: var(--white);
   --ui-color-2: var(--gray-x-light);
@@ -20,15 +21,19 @@
 }
 
 body {
-  font-family: "IBM Plex Serif", serif;
+  font-family: "Google Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
   transition: all 0.2s;
   margin: 0;
 }
 
 .theme-light {
+  /* dynamic variables */
   --text-color: var(--gray-dark);
-  /* text color changes here */
   --squiggle-color: var(--gray-x-light);
+  --post-container-shadow: 0 0 24px 0 rgba(00,00,00,0.2);
+
   --ui-color-1: var(--white);
   --ui-color-2: var(--gray-x-light);
   --ui-color-3: var(--gray-light);
@@ -39,9 +44,11 @@ body {
 }
 
 .theme-dark {
+  /* dynamic variables */
   --text-color: var(--white);
-  /* text color changes here */
   --squiggle-color: var(--gray-med);
+  --post-container-shadow: 0 0 34px 0 rgba(00,00,00,0.1);
+
   --ui-color-1: var(--gray-dark);
   --ui-color-2: var(--gray-med);
   --ui-color-3: var(--gray-light);
@@ -66,6 +73,7 @@ h5,
 h6,
 .h6 {
   font-family: "Gabarito", sans-serif;
+  letter-spacing: normal;
   font-weight: 700;
   margin-top: 0;
 }
@@ -98,14 +106,15 @@ h5,
 
 p,
 .p {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 400;
   line-height: 1.7;
   margin: 0 0 24px 0;
+  opacity: 0.9;
 }
 
 li {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 400;
   line-height: 1.7;
   margin: 0 0 16px 0;
@@ -157,7 +166,7 @@ a:has(h6) {
 
   p,
   .p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   li {
@@ -292,7 +301,8 @@ div.section {
 }
 
 .nav-item {
-  font-family: "Gabarito", sans-serif;
+  font-family: "Google Sans", sans-serif;
+  letter-spacing: 0.02rem;
   font-weight: 400;
   padding: 4px 12px;
   color: var(--text-color);
@@ -354,6 +364,7 @@ div.section {
 /* POST CONTAINER */
 .post-container {
   background-color: var(--ui-color-2);
+  box-shadow: var(--post-container-shadow);
   padding: 40px;
   border-radius: 16px;
   margin-bottom: 40px;
@@ -364,56 +375,6 @@ div.section {
     padding: 24px;
   }
 }
-
-/* ------ MUSIC ------- */
-.download-audio {
-  display: flex;
-  width: 50px;
-  height: 50px;
-  background-color: var(--brand-red);
-  border-radius: 32px;
-  align-items: center;
-  justify-content: center;
-}
-
-a:has(.download-audio) {
-  text-decoration: none;
-}
-
-/* Audio Player HTML */
-audio::-webkit-media-controls-panel {
-  background-color: var(--brand-red);
-}
-
-audio::-webkit-media-controls-play-button {
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-audio::-webkit-media-controls-current-time-display {
-  color: #fff;
-}
-
-audio::-webkit-media-controls-time-remaining-display {
-  color: #fff;
-}
-
-audio::-webkit-media-controls-mute-button {
-  background-color: #fff;
-  border-radius: 64px;
-}
-
-/* 
-audio::-webkit-media-controls-volume-slider
-audio::-webkit-media-controls-volume-slider-container
-audio::-webkit-media-controls-timeline-container
-audio::-webkit-media-controls-timeline
-audio::-webkit-media-controls-seek-back-button
-audio::-webkit-media-controls-seek-forward-button
-audio::-webkit-media-controls-fullscreen-button
-audio::-webkit-media-controls-rewind-button
-audio::-webkit-media-controls-return-to-realtime-button
-audio::-webkit-media-controls-toggle-closed-captions-button */
 
 /* ------- FOOTER ------- */
 #global-footer {
@@ -429,6 +390,9 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
 .footer-social-icon {
   color: var(--text-color);
   font-size: 24px;
+}
+.footer-social-icon:hover {
+  color: var(--brand-red);
 }
 
 /* ------- UTILITY ------- */
@@ -498,7 +462,7 @@ audio::-webkit-media-controls-toggle-closed-captions-button */
 /* ------- SVGs ------- */
 svg.squiggle-background {
   z-index: 1;
-  opacity: 0.4;
+  opacity: 0.35;
 }
 
 svg.squiggle-background path {
@@ -570,4 +534,174 @@ svg.squiggle-background path {
     margin-right: -20%;
     top: 12%;
   }
+}
+
+/* ------ MUSIC PAGE ------- */
+
+.music-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.music-background svg#squiggle-01 {
+  position: absolute;
+  top: 55%;
+  transform: rotate(10deg);
+  overflow: visible;
+  margin: 0 -10%;
+}
+.music-background svg#squiggle-02 {
+  position: absolute;
+  top: 20%;
+  transform: rotate(0deg);
+  overflow: visible;
+  margin: 0 -10%;
+}
+@media screen and (min-width: 1921px) {
+  .music-background svg#squiggle-01 {
+    top: 45%;
+  }
+  .music-background svg#squiggle-02 {
+    display: none;
+  }
+}
+.music-background svg#squiggle-01 path {
+  stroke-width: 20px;
+}
+.music-background svg#squiggle-02 path {
+  stroke-width: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .music-background svg#squiggle-01 {
+    margin: 0 -70%;
+  }
+  .music-background svg#squiggle-02 {
+    margin-right: -20%;
+    top: 12%;
+  }
+}
+
+svg#squiggle-underline {
+  height: auto;
+  width: 100%;
+  max-width: 250px;
+  margin: 24px 0;
+  opacity: 0.9;
+}
+svg#squiggle-underline path {
+  stroke: var(--text-color);
+}
+
+.download-audio {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: var(--brand-red);
+  border-radius: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+a:has(.download-audio) {
+  text-decoration: none;
+}
+
+/* Audio Player HTML */
+audio::-webkit-media-controls-panel {
+  background-color: var(--brand-red);
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: #fff;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #fff;
+  border-radius: 64px;
+}
+
+/* 
+audio::-webkit-media-controls-volume-slider
+audio::-webkit-media-controls-volume-slider-container
+audio::-webkit-media-controls-timeline-container
+audio::-webkit-media-controls-timeline
+audio::-webkit-media-controls-seek-back-button
+audio::-webkit-media-controls-seek-forward-button
+audio::-webkit-media-controls-fullscreen-button
+audio::-webkit-media-controls-rewind-button
+audio::-webkit-media-controls-return-to-realtime-button
+audio::-webkit-media-controls-toggle-closed-captions-button 
+*/
+
+/* ------ WEB PROJECTS PAGE ------- */
+
+.projects-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.projects-background svg#squiggle-01 {
+  position: absolute;
+  top: 55%;
+  transform: rotate(10deg);
+  overflow: visible;
+  margin: 0 -10%;
+}
+.projects-background svg#squiggle-02 {
+  position: absolute;
+  top: 20%;
+  transform: rotate(0deg);
+  overflow: visible;
+  margin: 0 -10%;
+}
+@media screen and (min-width: 1921px) {
+  .projects-background svg#squiggle-01 {
+    top: 45%;
+  }
+  .projects-background svg#squiggle-02 {
+    display: none;
+  }
+}
+.projects-background svg#squiggle-01 path {
+  stroke-width: 20px;
+}
+.projects-background svg#squiggle-02 path {
+  stroke-width: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .projects-background svg#squiggle-01 {
+    margin: 0 -70%;
+  }
+  .projects-background svg#squiggle-02 {
+    margin-right: -20%;
+    top: 12%;
+  }
+}
+
+svg#squiggle-underline {
+  height: auto;
+  width: 100%;
+  max-width: 280px;
+  margin: 24px 0;
+  opacity: 0.9;
+}
+svg#squiggle-underline path {
+  stroke: var(--text-color);
 }
