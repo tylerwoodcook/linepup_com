@@ -29,6 +29,9 @@ include('../header.php');
     <p class="mb-56">Here's a collection of some web projects that I've made.</p>
 
     <div class="post-container">
+        <div class="web-project-screenshot">
+            <img src="/web/graceful-grizzly-screenshot.png">
+        </div>
         <h2><i class="fa-solid fa-microphone"></i> Graceful Grizzly Podcast</h2>
         <p>The website for the Graceful Grizzly Podcast. Built with WordPress.
         </p>
@@ -38,6 +41,9 @@ include('../header.php');
     </div>
 
     <div class="post-container">
+        <div class="web-project-screenshot">
+            <img src="/web/color-amp-screenshot.png">
+        </div>
         <h2><i class="fa-solid fa-brush"></i> Color Amp</h2>
         <p>A color tool to quickly find and save colors using hue, saturation and brightness knobs. Build a color palette in minutes—nay, seconds! More features coming soon.
         </p>
@@ -47,6 +53,9 @@ include('../header.php');
     </div>
 
     <div class="post-container">
+        <div class="web-project-screenshot">
+            <img src="/web/lets-roll-screenshot.png">
+        </div>
         <h2><i class="fa-solid fa-dice-d20"></i> Dice Roller</h2>
         <p>Super simple project with unlimited uses. Roll for damage, roll for initiative, or maybe even roll to see what movie you're going to watch tonight.
         </p>
@@ -57,6 +66,9 @@ include('../header.php');
     </div>
 
     <div class="post-container">
+        <div class="web-project-screenshot">
+            <img src="/web/dm-screen-screenshot.png">
+        </div>
         <h2><i class="fa-solid fa-hat-wizard"></i> Dungeon Master's Screen</h2>
         <p>If you’ve ever played a tabletop RPG, you know how wonderfully chaotic things can get.
             As the game master, I’m always looking for ways to keep sessions running smoothly without losing that energy.

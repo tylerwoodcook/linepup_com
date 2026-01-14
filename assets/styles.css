@@ -11,13 +11,17 @@
   /* Dynamic variables - change with theme switch */
   --text-color: var(--gray-dark);
   --squiggle-color: var(--gray-x-light);
-  --post-container-shadow: 0 0 24px 0 rgba(00, 00, 00, 0.2);
+  --post-container-shadow: 0 0 16px 0 rgba(00, 00, 00, 0.3);
 
   --ui-color-1: var(--white);
   --ui-color-2: var(--gray-x-light);
   --ui-color-3: var(--gray-light);
   --ui-color-4: var(--gray-med);
   --ui-color-5: var(--gray-dark);
+}
+
+html {
+  scrollbar-gutter: stable both-edges;
 }
 
 body {
@@ -32,7 +36,7 @@ body {
   /* dynamic variables */
   --text-color: var(--gray-dark);
   --squiggle-color: var(--gray-x-light);
-  --post-container-shadow: 0 0 24px 0 rgba(00, 00, 00, 0.2);
+  --post-container-shadow: 0 0 16px 0 rgba(00, 00, 00, 0.3);
 
   --ui-color-1: var(--white);
   --ui-color-2: var(--gray-x-light);
@@ -143,7 +147,6 @@ a:has(h6) {
 }
 
 @media screen and (max-width: 600px) {
-
   h1,
   .h1 {
     font-size: 40px;
@@ -184,7 +187,7 @@ hr {
 
 .btn {
   padding: 12px 20px;
-  font-family: 'Google Sans', sans-serif;
+  font-family: "Google Sans", sans-serif;
   background-color: var(--brand-red);
   color: #fff;
   cursor: pointer;
@@ -381,7 +384,7 @@ div.section {
   box-shadow: var(--post-container-shadow);
   padding: 40px;
   border-radius: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 64px;
 }
 
 @media screen and (max-width: 600px) {
@@ -738,4 +741,16 @@ svg#squiggle-underline {
 
 svg#squiggle-underline path {
   stroke: var(--text-color);
+}
+
+
+.web-project-screenshot {
+  margin-bottom: 40px;
+}
+
+.web-project-screenshot img {
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+  transition: all 0.2s;
 }
