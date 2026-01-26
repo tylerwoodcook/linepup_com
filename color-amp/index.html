@@ -21,115 +21,6 @@
     <title>Color Amp</title>
 
     <style>
-      #buttons-container {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-      }
-
-      #saved-colors {
-        display: none;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 16px;
-        padding: 16px;
-        margin-top: 16px;
-        border: 3px solid color-mix(in srgb, var(--text-color), transparent 90%);
-        background-color: color-mix(
-          in srgb,
-          var(--text-color),
-          transparent 80%
-        );
-        border-radius: 5px;
-      }
-
-      .saved-color {
-        padding: 16px;
-        border-radius: 5px;
-        flex: 0 0 calc(33.33% - 48px);
-      }
-
-      .saved-color p {
-        margin: 0;
-      }
-
-      .rubber-button button {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        padding: 6px 12px;
-        border-radius: 100px;
-        font-size: 14px;
-        font-family: "Roboto Mono", sans-serif;
-        font-weight: 900;
-        cursor: pointer;
-      }
-
-      .rubber-button.white button {
-        color: #575757;
-        border: 1px solid #e0e0e0;
-        background: conic-gradient(
-          from 180deg,
-          #f0f0f0,
-          #e0e0e0,
-          #f0f0f0,
-          #e0e0e0,
-          #f0f0f0,
-          #e0e0e0,
-          #f0f0f0
-        );
-        box-shadow:
-          0 0 2px rgba(255, 255, 255, 0.6),
-          0 0 10px rgba(255, 255, 255, 0.3),
-          0 0 30px rgba(255, 255, 255, 0.4),
-          1px 2px 3px rgba(00, 00, 00, 0.3),
-          0 0 12px rgba(00, 00, 00, 0.2);
-      }
-
-      .rubber-button.red button {
-        color: #ffdbdb;
-        border: 1px solid #ff7057;
-        background: conic-gradient(
-          from 180deg,
-          #ff6b6b,
-          #ff4747,
-          #ff6b6b,
-          #ff4747,
-          #ff6b6b,
-          #ff4747,
-          #ff6b6b
-        );
-        box-shadow:
-          0 0 2px rgba(255, 112, 112, 0.9),
-          0 0 10px rgba(255, 112, 112, 0.6),
-          0 0 30px rgba(255, 240, 240, 0.4),
-          1px 2px 3px rgba(00, 00, 00, 0.3),
-          0 0 12px rgba(00, 00, 00, 0.2);
-      }
-
-      .rubber-button p {
-        margin: 0;
-      }
-
-      .glow-container {
-        width: 100%;
-        opacity: 0.9;
-        border-radius: 8px;
-        /* border: 2px solid color-mix(in srgb, var(--bg-color), transparent 1000%); */
-        /* border: none; */
-
-        background-color: #fff;
-        box-sizing: border-box;
-        /* Subtle colored rim */
-
-        /* Layer 1: Sharp inner core glow */
-        /* Layer 2: Medium bleed */
-        /* Layer 3: Large, soft environmental glow */
-        box-shadow:
-          0 0 3px rgba(255, 255, 255, 0.6),
-          0 0 20px rgba(255, 255, 255, 0.4),
-          0 0 70px rgba(255, 255, 255, 0.4);
-      }
-
       :root {
         --knob-size: 50px;
         --pointer-color: #e0e0e0;
@@ -143,7 +34,6 @@
         flex-direction: column;
         align-items: center;
         gap: 60px;
-        align-items: center;
         min-height: 100vh;
         margin: 0;
         padding: 40px 16px;
@@ -251,6 +141,119 @@
         font-weight: 400;
       }
 
+      #buttons-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      #saved-colors {
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+        padding: 16px;
+        margin-top: 16px;
+        border: 3px solid color-mix(in srgb, var(--text-color), transparent 90%);
+        background-color: color-mix(
+          in srgb,
+          var(--text-color),
+          transparent 80%
+        );
+        border-radius: 5px;
+      }
+
+      .saved-color {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        border-radius: 5px;
+        flex: 0 0 calc(33.33% - 48px);
+      }
+
+      .saved-color p {
+        margin: 0;
+      }
+
+      .saved-color span.remove-saved-color {
+        display: block;
+        cursor: pointer;
+        padding: 6px 15px;
+        font-size: 24px;
+        border-radius: 3px;
+        background-color: transparent;
+      }
+      .saved-color span.remove-saved-color:hover {
+        background-color: var(--remove-x-hover); /* gets updated dynamically */
+      }
+
+      .rubber-button button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 6px 12px;
+        border-radius: 100px;
+        font-size: 14px;
+        font-family: "Roboto Mono", sans-serif;
+        font-weight: 900;
+        cursor: pointer;
+      }
+
+      .rubber-button.white button {
+        color: #575757;
+        border: 1px solid #e0e0e0;
+        background: conic-gradient(
+          from 180deg,
+          #f0f0f0,
+          #e0e0e0,
+          #f0f0f0,
+          #e0e0e0,
+          #f0f0f0,
+          #e0e0e0,
+          #f0f0f0
+        );
+        box-shadow:
+          0 0 2px rgba(255, 255, 255, 0.6),
+          0 0 10px rgba(255, 255, 255, 0.3),
+          0 0 30px rgba(255, 255, 255, 0.4),
+          1px 2px 3px rgba(00, 00, 00, 0.3),
+          0 0 12px rgba(00, 00, 00, 0.2);
+      }
+
+      .rubber-button.red button {
+        color: #ffdbdb;
+        border: 1px solid #ff7057;
+        background: conic-gradient(
+          from 180deg,
+          #ff6b6b,
+          #ff4747,
+          #ff6b6b,
+          #ff4747,
+          #ff6b6b,
+          #ff4747,
+          #ff6b6b
+        );
+        box-shadow:
+          0 0 2px rgba(255, 112, 112, 0.9),
+          0 0 10px rgba(255, 112, 112, 0.6),
+          0 0 30px rgba(255, 240, 240, 0.4),
+          1px 2px 3px rgba(00, 00, 00, 0.3),
+          0 0 12px rgba(00, 00, 00, 0.2);
+      }
+
+      .glow-container {
+        width: 100%;
+        opacity: 0.9;
+        border-radius: 8px;
+        background-color: #fff;
+        box-sizing: border-box;
+        box-shadow:
+          0 0 3px rgba(255, 255, 255, 0.6),
+          0 0 20px rgba(255, 255, 255, 0.4),
+          0 0 70px rgba(255, 255, 255, 0.4);
+      }
+
       @media (max-width: 820px) {
         #nav {
           flex-direction: column;
@@ -313,7 +316,7 @@
         display: block;
         padding: 8px 16px;
         border-radius: 5px;
-        background-color: rgba(00, 00, 00, 0.2);
+        background-color: rgba(00, 00, 00, 0.6);
       }
 
       #link-to-linepup p {
@@ -438,11 +441,11 @@
   let currentRotation = 0;
 
   knobs.forEach((knob) => {
-
     knob.addEventListener("pointerdown", (e) => {
       activeKnob = knob;
       startY = e.clientY;
-      currentRotation = parseFloat(localStorage.getItem(`${knob.id}-rotation`)) || -120;
+      currentRotation =
+        parseFloat(localStorage.getItem(`${knob.id}-rotation`)) || -120;
       knob.style.transition = "none";
       knob.setPointerCapture(e.pointerId);
     });
@@ -481,10 +484,12 @@
     activeKnob = null;
   });
 
+
+  // Function: update theme
   function updateTheme() {
     const hue = Math.round(knobStates["hue-knob"] * 360);
     const saturation = Math.round(knobStates["saturation-knob"] * 100);
-    const brightness = Math.round(0 + knobStates["brightness-knob"] * 100);
+    const brightness = Math.round(knobStates["brightness-knob"] * 100);
 
     const hslString = `hsl(${hue}, ${saturation}%, ${brightness}%)`;
     body.style.setProperty("--bg-color", hslString);
@@ -504,7 +509,60 @@
     body.style.setProperty("--text-color", textColor);
   }
 
-  // Helper function to convert "rgb(r, g, b)" to "#ffffff"
+
+  // Function: save color
+  function saveColor() {
+    let hsl = document.getElementById("hsl-val").innerText;
+    let rgb = document.getElementById("rgb-val").innerText;
+    let hex = document.getElementById("hex-val").innerText;
+
+    const bodyStyles = getComputedStyle(body);
+    const textColor = bodyStyles.getPropertyValue("--text-color").trim();
+    const removeSavedColorBgColor = hexToRgba(textColor, 0.1);
+
+    const saveColorContainer = document.getElementById("saved-colors");
+    const savedColor = document.createElement("div");
+    savedColor.style.setProperty("--remove-x-hover", removeSavedColorBgColor);
+
+    const removeSavedColorX = `<span class='remove-saved-color'>×</span>`;
+
+    saveColorContainer.style.display = "grid";
+    savedColor.className = "saved-color";
+    savedColor.style.backgroundColor = hex;
+    savedColor.style.color = textColor;
+    savedColor.innerHTML += `<div><p>${hex}</p><p>${rgb}</p><p>${hsl}</p></div><div>${removeSavedColorX}</div>`;
+
+    const removeSavedColor = savedColor.querySelector(".remove-saved-color");
+    removeSavedColor.addEventListener("click", () => {
+      savedColor.remove();
+
+      // hide container if empty
+      if (!saveColorContainer.children.length) {
+        saveColorContainer.style.display = "none";
+      }
+    });
+
+    // append to saved colors container
+    saveColorContainer.appendChild(savedColor);
+  }
+
+  // Helper function: convert hex -> rgb
+  function hexToRgba(hex, alpha = 1) {
+    hex = hex.replace(/^#/, "");
+    if (hex.length === 3) { // Support shorthand hex (#abc)
+      hex = hex
+        .split("")
+        .map((c) => c + c)
+        .join("");
+    }
+    const bigint = parseInt(hex, 16);
+    const r = (bigint >> 16) & 255;
+    const g = (bigint >> 8) & 255;
+    const b = bigint & 255;
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+
+  // Helper function: convert rgb -> hex
   function rgbToHex(rgb) {
     const rgbValues = rgb.match(/\d+/g);
     return (
@@ -518,23 +576,11 @@
     );
   }
 
-  function saveColor() {
-    let hsl = document.getElementById("hsl-val").innerText;
-    let rgb = document.getElementById("rgb-val").innerText;
-    let hex = document.getElementById("hex-val").innerText;
-
-    const bodyStyles = window.getComputedStyle(body);
-    let textColor = bodyStyles.color;
-    const saveColorContainer = document.getElementById("saved-colors");
-    saveColorContainer.style.display = "grid";
-    saveColorContainer.innerHTML += `<div class="saved-color" style="background-color: ${hex}; color: ${textColor};"><p>${hex}</p><p>${rgb}</p><p>${hsl}</p></div>`;
-  }
-
+  // function: clear all saved colors
   function clearColors() {
     const saveColorContainer = document.getElementById("saved-colors");
-
     saveColorContainer.style.display = "none";
-
     saveColorContainer.innerHTML = "";
   }
+
 </script>
