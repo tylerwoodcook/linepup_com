@@ -392,13 +392,13 @@
         let startY = 0;
         let currentRotation = parseFloat(localStorage.getItem(`${knob.id}-rotation`)) || -120;
 
-        knob.addEventListener('mousedown', (e) => {
+        knob.addEventListener('pointerdown', (e) => {
             isDragging = true;
             startY = e.clientY;
             knob.style.transition = 'none';
         });
 
-        window.addEventListener('mousemove', (e) => {
+        window.addEventListener('pointermove', (e) => {
             if (!isDragging) return;
 
             const deltaY = startY - e.clientY;
@@ -416,10 +416,15 @@
             localStorage.setItem(`${knob.id}-rotation`, currentRotation);
         });
 
-        window.addEventListener('mouseup', () => {
+        knob.addEventListener('pointerup', () => {
             isDragging = false;
             knob.style.transition = 'transform 0.1s ease-out';
         });
+
+        knob.addEventListener('pointercancel', () => {
+            isDragging = false;
+        });
+
     });
 
     function updateTheme() {
