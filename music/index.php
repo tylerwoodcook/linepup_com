@@ -1,6 +1,14 @@
 <?php
 $pageTitle = 'Linepup - Music';
 include('../header.php');
+
+// Add song file variables
+$farFromTheTree = 'far-from-the-tree-1-21-26.mp3';
+$faults = 'faults-11-25-2023.mp3';
+$forestStrings = 'forest-strings-1-26-26.mp3';
+$kickRocks = 'kick-rocks-2-18-26.wav';
+$swells = 'swells-1-5-26.mp3';
+
 ?>
 
 <div class="music-background">
@@ -28,7 +36,7 @@ include('../header.php');
         </g>
     </svg>
 
-    <p class="mb-56">Here I’m sharing some of my musical projects. Some I consider done; others may still be works in progress. I hope you enjoy!</p>
+    <p class="mb-56">Sometimes I make some music.</p>
 
 
     <!-- SWELLS -->
@@ -40,11 +48,33 @@ include('../header.php');
         <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 24px; align-items: center;">
             <div>
                 <audio controls="">
-                    <source src="swells-1-5-26.mp3" type="audio/mpeg">Your browser does not support the audio tag.
+                    <source src="<?php echo $swells; ?>" type="audio/mpeg">Your browser does not support the audio tag.
                 </audio>
             </div>
             <div>
-                <a href="swells-1-5-26.mp3" download="">
+                <a href="<?php echo $swells; ?>" download="">
+                    <div class="download-audio" title="Download Song">
+                        <i class="fa-solid fa-cloud-arrow-down" style="font-size: 24px; color: white;" aria-hidden="true"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- KICK ROCKS -->
+    <div class="post-container">
+        <h2>Kick Rocks</h2>
+
+        <p style="margin-bottom: 40px;">Kickin' rocks.</p>
+
+        <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 24px; align-items: center;">
+            <div>
+                <audio controls="">
+                    <source src="<?php echo $kickRocks; ?>" type="audio/mpeg">Your browser does not support the audio tag.
+                </audio>
+            </div>
+            <div>
+                <a href="<?php echo $kickRocks; ?>" download="">
                     <div class="download-audio" title="Download Song">
                         <i class="fa-solid fa-cloud-arrow-down" style="font-size: 24px; color: white;" aria-hidden="true"></i>
                     </div>
@@ -62,11 +92,11 @@ include('../header.php');
         <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 24px; align-items: center;">
             <div>
                 <audio controls="">
-                    <source src="forest-strings-1-9-26.mp3" type="audio/mpeg">Your browser does not support the audio tag.
+                    <source src="<?php echo $forestStrings; ?>" type="audio/mpeg">Your browser does not support the audio tag.
                 </audio>
             </div>
             <div>
-                <a href="forest-strings-1-9-26.mp3" download="">
+                <a href="<?php echo $forestStrings; ?>" download="">
                     <div class="download-audio" title="Download Song">
                         <i class="fa-solid fa-cloud-arrow-down" style="font-size: 24px; color: white;" aria-hidden="true"></i>
                     </div>
@@ -85,11 +115,11 @@ include('../header.php');
         <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 24px; align-items: center;">
             <div>
                 <audio controls="">
-                    <source src="far-from-the-tree-2-24-2025.mp3" type="audio/mpeg">Your browser does not support the audio tag.
+                    <source src="<?php echo $farFromTheTree; ?>" type="audio/mpeg">Your browser does not support the audio tag.
                 </audio>
             </div>
             <div>
-                <a href="far-from-the-tree-2-24-2025.mp3" download="">
+                <a href="<?php echo $farFromTheTree; ?>" download="">
                     <div class="download-audio" title="Download Song">
                         <i class="fa-solid fa-cloud-arrow-down" style="font-size: 24px; color: white;" aria-hidden="true"></i>
                     </div>
@@ -111,11 +141,11 @@ include('../header.php');
         <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 24px; align-items: center;">
             <div>
                 <audio controls="">
-                    <source src="faults-11-25-2023.mp3" type="audio/mpeg">Your browser does not support the audio tag.
+                    <source src="<?php echo $faults; ?>" type="audio/mpeg">Your browser does not support the audio tag.
                 </audio>
             </div>
             <div>
-                <a href="faults-11-25-2023.mp3" download="">
+                <a href="<?php echo $faults; ?>" download="">
                     <div class="download-audio" title="Download Song">
                         <i class="fa-solid fa-cloud-arrow-down" style="font-size: 24px; color: white;" aria-hidden="true"></i>
                     </div>
@@ -123,30 +153,6 @@ include('../header.php');
             </div>
         </div>
     </div>
-
-
-    <!-- WRETCHED -->
-    <div class="post-container">
-        <h2>Wretched</h2>
-
-        <p style="margin-bottom: 40px;">“For I do not understand my own actions. For I do not do what I want, but I do the very thing I hate.” Romans chapter 7.</p>
-
-        <div style="display: flex; flex-wrap: wrap; width: 100%; gap: 24px; align-items: center;">
-            <div>
-                <audio controls="">
-                    <source src="wretched-2-19-2024.mp3" type="audio/mpeg">Your browser does not support the audio tag.
-                </audio>
-            </div>
-            <div>
-                <a href="wretched-2-19-2024.mp3" download="">
-                    <div class="download-audio" title="Download Song">
-                        <i class="fa-solid fa-cloud-arrow-down" style="font-size: 24px; color: white;" aria-hidden="true"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
 
 
 </div>
