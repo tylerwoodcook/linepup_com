@@ -45,7 +45,6 @@
       <div id="site-nav"">
         <div><a class="nav-item" href="/">Home</a></div>
         <div><a class="nav-item" href="/web">Web</a></div>
-        <div><a class="nav-item" href="/music">Music</a></div>
         <div class="header-theme-container">
           <div>
             <a class="nav-item-theme-icon" onclick="lightTheme();" id="light-theme"><i class="fa-solid fa-sun"></i></a>
